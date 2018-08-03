@@ -9,9 +9,6 @@ Figure-1 </br>
 <img src="./picture/debug_pulpino.jpg" />
 
 
-
-
-
 ### 1.确认连线
 
 在$HOME/fpga/pulpemu/ps7_bd.tcl中，spi已经进行了连线，
@@ -40,8 +37,10 @@ linux 如何读取dts文件：
 
 **D. 创建设备**
 
-  
-  start_kernel->rest_init->kernel_init->do_basic_setup->driver_init
+    start_kernel->rest_init->kernel_init->do_basic_setup->driver_init
+    在driver_init中
+
+
 
 ### 3.设备访问
 
