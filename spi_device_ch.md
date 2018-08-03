@@ -29,18 +29,13 @@ Nothing
 
 **C. device tree**
 
-在zynq-7000.dtsi中，有spi0和spi1的描述
-
-linux 如何读取dts文件：
-
+在zynq-7000.dtsi中，有spi0和spi1的描述。Linux将会根据dts中的描述，创建相应的设备，
+/proc/device_tree显示了读取的结果
 
 
 **D. 创建设备**
 
-    start_kernel->rest_init->kernel_init->do_basic_setup->driver_init
-    在driver_init中
-
-
+PULP使用了SPI接口进行通信，用来将程序加载到
 
 ### 3.设备访问
 
