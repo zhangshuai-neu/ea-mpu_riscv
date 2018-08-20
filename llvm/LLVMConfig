@@ -1,7 +1,3 @@
-安装build essential
-sudo apt-get install texinfo
-sudo apt-get install git
-
 1.安装cmake(必须要安装高版本，下载的源码包文件)
 解压文件执行如下命令
 ./bootstrap （如果安转失败了，再重新装的时候就会失败，make clean或者直接重新解压）
@@ -19,7 +15,6 @@ sudo chmod a+rx /usr/sbin/ninja
 //Path to a program.  
 CMAKE_MAKE_PROGRAM:FILEPATH=/usr/sbin/ninja
 
-
 3.编译LLVM
 1) 下载zlib
 http://zlib.net
@@ -34,14 +29,19 @@ http://zlib.net
 3) sudo apt-get install subversion
 
 4) 搭建LLVM (https://blog.csdn.net/wangyulinyy/article/details/39211115)
+
+不同的版本在网站中选择
+
 建立LLVM文件夹
 svn co http://llvm.org/svn/llvm-project/llvm/trunk llvm
 svn co http://llvm.org/svn/llvm-project/llvm/tags/RELEASE_400/final/ llvm
 svn co http://llvm.org/svn/llvm-project/llvm/tags/RELEASE_360/final/ llvm
+
 进入tools文件夹(llvm/tools)
 svn co http://llvm.org/svn/llvm-project/cfe/trunk clang
 svn co http://llvm.org/svn/llvm-project/cfe/tags/RELEASE_400/final/ clang
 svn co http://llvm.org/svn/llvm-project/cfe/tags/RELEASE_360/final/ clang
+
 进入projects文件夹(llvm/projects)
 svn co http://llvm.org/svn/llvm-project/compiler-rt/trunk compiler-rt
 svn co http://llvm.org/svn/llvm-project/test-suite/trunk test-suite
@@ -52,11 +52,17 @@ svn co http://llvm.org/svn/llvm-project/test-suite/tags/RELEASE_400/final/ test-
 svn co http://llvm.org/svn/llvm-project/compiler-rt/tags/RELEASE_360/final compiler-rt
 svn co http://llvm.org/svn/llvm-project/test-suite/tags/RELEASE_360/final/ test-suite
 
-
-建立build文件夹用来编译（与llvm目录同级）
+（使用Ninja）
 cmake -G Ninja -DCMAKE_BUILD_TYPE=Release ../llvm/
-make -j8
-sudo make install
+建立build文件夹用来编译（与llvm目录同级）
+ninja install
+
+（使用makefile）
+建立build文件夹用来编译（与llvm目录同级）
+cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release ../llvm/
+make -j8 (电脑卡就直接make或者用-j2,-j4)
+make install (error 就加上sudo)
+
 
 sudo apt-get install python-dev
 
@@ -67,6 +73,5 @@ $ mkdir build //（与binutils同级目录）
 $ cd build
 $ ../binutils/configure --disable-werror 
 $ make all-ld
-
 
 
