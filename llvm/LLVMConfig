@@ -1,0 +1,72 @@
+安装build essential
+sudo apt-get install texinfo
+sudo apt-get install git
+
+1.安装cmake(必须要安装高版本，下载的源码包文件)
+解压文件执行如下命令
+./bootstrap （如果安转失败了，再重新装的时候就会失败，make clean或者直接重新解压）
+make 
+sudo make install
+
+2.安装ninja (http://blog.sina.com.cn/s/blog_6114e8c80101arpu.html)
+git clone git://github.com/ninja-build/ninja.git
+sudo apt-get install re2c
+python ./bootstrap.py (或者直接执行./configure.py --bootstrap)
+
+sudo cp ninja /usr/sbin/
+sudo chmod a+rx /usr/sbin/ninja
+上面两条语句具体复制到什么地方取决于CMakeCache.txt中类似于如下内容（详见https://stackoverflow.com/questions/46712234/get-cmakes-ninja-test-command）
+//Path to a program.  
+CMAKE_MAKE_PROGRAM:FILEPATH=/usr/sbin/ninja
+
+
+3.编译LLVM
+1) 下载zlib
+http://zlib.net
+下载后解压：
+ ./configure
+ make 
+ make check
+ sudo make install
+
+2) sudo apt-get install binutils
+
+3) sudo apt-get install subversion
+
+4) 搭建LLVM (https://blog.csdn.net/wangyulinyy/article/details/39211115)
+建立LLVM文件夹
+svn co http://llvm.org/svn/llvm-project/llvm/trunk llvm
+svn co http://llvm.org/svn/llvm-project/llvm/tags/RELEASE_400/final/ llvm
+svn co http://llvm.org/svn/llvm-project/llvm/tags/RELEASE_360/final/ llvm
+进入tools文件夹(llvm/tools)
+svn co http://llvm.org/svn/llvm-project/cfe/trunk clang
+svn co http://llvm.org/svn/llvm-project/cfe/tags/RELEASE_400/final/ clang
+svn co http://llvm.org/svn/llvm-project/cfe/tags/RELEASE_360/final/ clang
+进入projects文件夹(llvm/projects)
+svn co http://llvm.org/svn/llvm-project/compiler-rt/trunk compiler-rt
+svn co http://llvm.org/svn/llvm-project/test-suite/trunk test-suite
+
+svn co http://llvm.org/svn/llvm-project/compiler-rt/tags/RELEASE_400/final compiler-rt
+svn co http://llvm.org/svn/llvm-project/test-suite/tags/RELEASE_400/final/ test-suite
+
+svn co http://llvm.org/svn/llvm-project/compiler-rt/tags/RELEASE_360/final compiler-rt
+svn co http://llvm.org/svn/llvm-project/test-suite/tags/RELEASE_360/final/ test-suite
+
+
+建立build文件夹用来编译（与llvm目录同级）
+cmake -G Ninja -DCMAKE_BUILD_TYPE=Release ../llvm/
+make -j8
+sudo make install
+
+sudo apt-get install python-dev
+
+4.gold pulgin 安装
+https://llvm.org/docs/GoldPlugin.html
+$ git clone --depth 1 git://sourceware.org/git/binutils-gdb.git binutils
+$ mkdir build //（与binutils同级目录）
+$ cd build
+$ ../binutils/configure --disable-werror 
+$ make all-ld
+
+
+
