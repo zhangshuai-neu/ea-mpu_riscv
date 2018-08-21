@@ -1,0 +1,224 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Aug 21 14:17:47 2018
+# Process ID: 3978
+# Current directory: /home/zhangshuai/develop/soft_core/vivado_project/test_picorv32
+# Command line: vivado
+# Log file: /home/zhangshuai/develop/soft_core/vivado_project/test_picorv32/vivado.log
+# Journal file: /home/zhangshuai/develop/soft_core/vivado_project/test_picorv32/vivado.jou
+#-----------------------------------------------------------
+start_gui
+Warning: Tried to connect to session manager, None of the authentication protocols specified are supported
+open_project /home/zhangshuai/develop/soft_core/vivado_project/test_picorv32/test_picorv32.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory '/home/zhangshuai/develop/soft_core/vivado-picorv32/picorv32_1.0'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/zhangshuai/develop/soft_core/vivado-picorv32/picorv32_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx_2017/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 6085.605 ; gain = 83.477 ; free physical = 3281 ; free virtual = 13832
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/zhangshuai/develop/soft_core/vivado_project/test_picorv32/test_picorv32.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'picosoc' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/zhangshuai/develop/soft_core/vivado_project/test_picorv32/test_picorv32.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj picosoc_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhangshuai/develop/soft_core/vivado_project/test_picorv32/picorv32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module picorv32
+INFO: [VRFC 10-311] analyzing module picorv32_regs
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_mul
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_fast_mul
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_div
+INFO: [VRFC 10-311] analyzing module picorv32_axi
+INFO: [VRFC 10-311] analyzing module picorv32_axi_adapter
+INFO: [VRFC 10-311] analyzing module picorv32_wb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zhangshuai/develop/soft_core/vivado_project/test_picorv32/picosoc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module picosoc
+INFO: [VRFC 10-311] analyzing module picosoc_mem
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/zhangshuai/develop/soft_core/vivado_project/test_picorv32/test_picorv32.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx_2017/Vivado/2017.4/bin/unwrapped/lnx64.o/xelab -wto 97d83e79ac664fd4a16342d2d311d6b1 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot picosoc_behav xil_defaultlib.picosoc xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.picorv32(BARREL_SHIFTER=1'b1,ENA...
+Compiling module xil_defaultlib.picosoc_mem
+Compiling module xil_defaultlib.picosoc
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot picosoc_behav
+
+****** Webtalk v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source /home/zhangshuai/develop/soft_core/vivado_project/test_picorv32/test_picorv32.sim/sim_1/behav/xsim/xsim.dir/picosoc_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] '/home/zhangshuai/develop/soft_core/vivado_project/test_picorv32/test_picorv32.sim/sim_1/behav/xsim/xsim.dir/picosoc_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Aug 21 14:20:37 2018. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx_2017/Vivado/2017.4/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Aug 21 14:20:37 2018...
+run_program: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 6146.934 ; gain = 1.996 ; free physical = 3186 ; free virtual = 13847
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/zhangshuai/develop/soft_core/vivado_project/test_picorv32/test_picorv32.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "picosoc_behav -key {Behavioral:sim_1:Functional:picosoc} -tclbatch {picosoc.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source picosoc.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+internal_sram.mem[          0] = 0100006f
+internal_sram.mem[          1] = 0080006f
+internal_sram.mem[          2] = 0040006f
+internal_sram.mem[          3] = 0000006f
+internal_sram.mem[          4] = 00000093
+internal_sram.mem[          5] = 00008113
+internal_sram.mem[          6] = 00008193
+internal_sram.mem[          7] = 00008213
+internal_sram.mem[          8] = 00008293
+internal_sram.mem[          9] = 00008313
+internal_sram.mem[         10] = 00008393
+internal_sram.mem[         11] = 00008413
+internal_sram.mem[         12] = 00008493
+ST_RD:   2 0x00001000
+-- 75000
+debugasm 00000000 0100006f      jal
+DECODE: 0x00000000 0x0100006f jal
+ST_RD:   0 0x00000004, BRANCH 0x00000010
+-- 115000
+debugasm 00000010 00000093     addi
+DECODE: 0x00000010 0x00000093 addi
+LD_RS1:  0 0x00000000
+ST_RD:   1 0x00000000
+-- 155000
+debugasm 00000014 00008113     addi
+DECODE: 0x00000014 0x00008113 addi
+LD_RS1:  1 0x00000000
+ST_RD:   2 0x00000000
+-- 195000
+debugasm 00000018 00008193     addi
+DECODE: 0x00000018 0x00008193 addi
+LD_RS1:  1 0x00000000
+ST_RD:   3 0x00000000
+-- 235000
+debugasm 0000001c 00008213     addi
+DECODE: 0x0000001c 0x00008213 addi
+LD_RS1:  1 0x00000000
+ST_RD:   4 0x00000000
+-- 275000
+debugasm 00000020 00008293     addi
+DECODE: 0x00000020 0x00008293 addi
+LD_RS1:  1 0x00000000
+ST_RD:   5 0x00000000
+-- 315000
+debugasm 00000024 00008313     addi
+DECODE: 0x00000024 0x00008313 addi
+LD_RS1:  1 0x00000000
+ST_RD:   6 0x00000000
+-- 355000
+debugasm 00000028 00008393     addi
+DECODE: 0x00000028 0x00008393 addi
+LD_RS1:  1 0x00000000
+ST_RD:   7 0x00000000
+-- 395000
+debugasm 0000002c 00008413     addi
+DECODE: 0x0000002c 0x00008413 addi
+LD_RS1:  1 0x00000000
+ST_RD:   8 0x00000000
+-- 435000
+debugasm 00000030 00008493     addi
+DECODE: 0x00000030 0x00008493 addi
+LD_RS1:  1 0x00000000
+ST_RD:   9 0x00000000
+-- 475000
+debugasm 00000034 00008513     addi
+DECODE: 0x00000034 0x00008513 addi
+LD_RS1:  1 0x00000000
+ST_RD:  10 0x00000000
+-- 515000
+debugasm 00000038 00008593     addi
+DECODE: 0x00000038 0x00008593 addi
+LD_RS1:  1 0x00000000
+ST_RD:  11 0x00000000
+-- 555000
+debugasm 0000003c 00008613     addi
+DECODE: 0x0000003c 0x00008613 addi
+LD_RS1:  1 0x00000000
+ST_RD:  12 0x00000000
+-- 595000
+debugasm 00000040 00008693     addi
+DECODE: 0x00000040 0x00008693 addi
+LD_RS1:  1 0x00000000
+ST_RD:  13 0x00000000
+-- 635000
+debugasm 00000044 00008713     addi
+DECODE: 0x00000044 0x00008713 addi
+LD_RS1:  1 0x00000000
+ST_RD:  14 0x00000000
+-- 675000
+debugasm 00000048 00008793     addi
+DECODE: 0x00000048 0x00008793 addi
+LD_RS1:  1 0x00000000
+ST_RD:  15 0x00000000
+-- 715000
+debugasm 0000004c 00008813     addi
+DECODE: 0x0000004c 0x00008813 addi
+LD_RS1:  1 0x00000000
+ST_RD:  16 0x00000000
+-- 755000
+debugasm 00000050 00008893     addi
+DECODE: 0x00000050 0x00008893 addi
+LD_RS1:  1 0x00000000
+ST_RD:  17 0x00000000
+-- 795000
+debugasm 00000054 00008913     addi
+DECODE: 0x00000054 0x00008913 addi
+LD_RS1:  1 0x00000000
+ST_RD:  18 0x00000000
+-- 835000
+debugasm 00000058 00008993     addi
+DECODE: 0x00000058 0x00008993 addi
+LD_RS1:  1 0x00000000
+ST_RD:  19 0x00000000
+-- 875000
+debugasm 0000005c 00008a13     addi
+DECODE: 0x0000005c 0x00008a13 addi
+LD_RS1:  1 0x00000000
+ST_RD:  20 0x00000000
+-- 915000
+debugasm 00000060 00008a93     addi
+DECODE: 0x00000060 0x00008a93 addi
+LD_RS1:  1 0x00000000
+ST_RD:  21 0x00000000
+-- 955000
+debugasm 00000064 00008b13     addi
+DECODE: 0x00000064 0x00008b13 addi
+LD_RS1:  1 0x00000000
+ST_RD:  22 0x00000000
+-- 995000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'picosoc_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 6221.445 ; gain = 76.508 ; free physical = 3137 ; free virtual = 13808
+close_sim
+INFO: [Simtcl 6-16] Simulation closed

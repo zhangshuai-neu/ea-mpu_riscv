@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Jul  6 16:21:06 2018
+# Process ID: 28834
+# Current directory: /home/zhangshuai/develop/soft_core/vivado_project/test_picorv32/test_picorv32.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /home/zhangshuai/develop/soft_core/vivado_project/test_picorv32/test_picorv32.sim/sim_1/behav/xsim/xsim.dir/picosoc_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/zhangshuai/develop/soft_core/vivado_project/test_picorv32/test_picorv32.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /home/zhangshuai/develop/soft_core/vivado_project/test_picorv32/test_picorv32.sim/sim_1/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /home/zhangshuai/develop/soft_core/vivado_project/test_picorv32/test_picorv32.sim/sim_1/behav/xsim/xsim.dir/picosoc_behav/webtalk/xsim_webtalk.tcl -notrace

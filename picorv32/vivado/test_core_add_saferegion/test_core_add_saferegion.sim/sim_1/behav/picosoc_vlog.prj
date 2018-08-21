@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../safe_region.v"
+verilog xil_defaultlib  "../../../picorv32.v"
+verilog xil_defaultlib  "../../../picosoc.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

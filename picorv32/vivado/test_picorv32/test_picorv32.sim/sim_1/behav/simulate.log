@@ -1,0 +1,102 @@
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+internal_sram.mem[          0] = fe010113
+internal_sram.mem[          1] = 00812e23
+internal_sram.mem[          2] = 02010413
+internal_sram.mem[          3] = 00100793
+internal_sram.mem[          4] = fef42623
+internal_sram.mem[          5] = 00200793
+internal_sram.mem[          6] = fef42423
+internal_sram.mem[          7] = fe042223
+internal_sram.mem[          8] = fec42703
+internal_sram.mem[          9] = fe842783
+internal_sram.mem[         10] = 00f707b3
+internal_sram.mem[         11] = fef42223
+internal_sram.mem[         12] = ff1ff06f
+ST_RD:   2 0x00000400
+-- 75000
+debugasm 00000000 fe010113     addi
+DECODE: 0x00000000 0xfe010113 addi
+LD_RS1:  2 0x00000400
+ST_RD:   2 0x000003e0
+-- 115000
+debugasm 00000004 00812e23       sw
+DECODE: 0x00000004 0x00812e23 sw
+LD_RS1:  2 0x000003e0
+LD_RS2:  8 0xxxxxxxxx
+-- 185000
+debugasm 00000008 02010413     addi
+DECODE: 0x00000008 0x02010413 addi
+LD_RS1:  2 0x000003e0
+ST_RD:   8 0x00000400
+-- 225000
+debugasm 0000000c 00100793     addi
+DECODE: 0x0000000c 0x00100793 addi
+LD_RS1:  0 0x00000000
+ST_RD:  15 0x00000001
+-- 265000
+debugasm 00000010 fef42623       sw
+DECODE: 0x00000010 0xfef42623 sw
+LD_RS1:  8 0x00000400
+LD_RS2: 15 0x00000001
+-- 335000
+debugasm 00000014 00200793     addi
+DECODE: 0x00000014 0x00200793 addi
+LD_RS1:  0 0x00000000
+ST_RD:  15 0x00000002
+-- 375000
+debugasm 00000018 fef42423       sw
+DECODE: 0x00000018 0xfef42423 sw
+LD_RS1:  8 0x00000400
+LD_RS2: 15 0x00000002
+-- 445000
+debugasm 0000001c fe042223       sw
+DECODE: 0x0000001c 0xfe042223 sw
+LD_RS1:  8 0x00000400
+LD_RS2:  0 0x00000000
+-- 515000
+debugasm 00000020 fec42703       lw
+DECODE: 0x00000020 0xfec42703 lw
+LD_RS1:  8 0x00000400
+ST_RD:  14 0x00000001
+-- 585000
+debugasm 00000024 fe842783       lw
+DECODE: 0x00000024 0xfe842783 lw
+LD_RS1:  8 0x00000400
+ST_RD:  15 0x00000002
+-- 655000
+debugasm 00000028 00f707b3      add
+DECODE: 0x00000028 0x00f707b3 add
+LD_RS1: 14 0x00000001
+LD_RS2: 15 0x00000002
+ST_RD:  15 0x00000003
+-- 695000
+debugasm 0000002c fef42223       sw
+DECODE: 0x0000002c 0xfef42223 sw
+LD_RS1:  8 0x00000400
+LD_RS2: 15 0x00000003
+-- 765000
+debugasm 00000030 ff1ff06f      jal
+DECODE: 0x00000030 0xff1ff06f jal
+ST_RD:   0 0x00000034, BRANCH 0x00000020
+-- 805000
+debugasm 00000020 fec42703       lw
+DECODE: 0x00000020 0xfec42703 lw
+LD_RS1:  8 0x00000400
+ST_RD:  14 0x00000001
+-- 875000
+debugasm 00000024 fe842783       lw
+DECODE: 0x00000024 0xfe842783 lw
+LD_RS1:  8 0x00000400
+ST_RD:  15 0x00000002
+-- 945000
+debugasm 00000028 00f707b3      add
+DECODE: 0x00000028 0x00f707b3 add
+LD_RS1: 14 0x00000001
+LD_RS2: 15 0x00000002
+ST_RD:  15 0x00000003
+-- 985000
+debugasm 0000002c fef42223       sw
+DECODE: 0x0000002c 0xfef42223 sw
+LD_RS1:  8 0x00000400
+LD_RS2: 15 0x00000003

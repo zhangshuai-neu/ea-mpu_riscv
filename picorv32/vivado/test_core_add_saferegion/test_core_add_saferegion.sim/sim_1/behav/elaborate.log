@@ -1,0 +1,21 @@
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2015.4/bin/unwrapped/lnx64.o/xelab -wto 44d00ccf28994d619ee1cf1dd33405ff --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot picosoc_behav xil_defaultlib.picosoc xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/home/zhangshuai/develop/soft_core/vivado_project/test_core_add_saferegion/picorv32.v" Line 39. Module picorv32(BARREL_SHIFTER=1'b1,CATCH_ILLINSN=1'b0,ENABLE_IRQ=1'b1,ENABLE_IRQ_QREGS=1'b0,PROGADDR_RESET=32'b0,STACKADDR=32'b010000000000) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/zhangshuai/develop/soft_core/vivado_project/test_core_add_saferegion/safe_region.v" Line 20. Module safe_region has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/zhangshuai/develop/soft_core/vivado_project/test_core_add_saferegion/test_core_add_saferegion.sim/sim_1/behav/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/zhangshuai/develop/soft_core/vivado_project/test_core_add_saferegion/picorv32.v" Line 39. Module picorv32(BARREL_SHIFTER=1'b1,CATCH_ILLINSN=1'b0,ENABLE_IRQ=1'b1,ENABLE_IRQ_QREGS=1'b0,PROGADDR_RESET=32'b0,STACKADDR=32'b010000000000) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/zhangshuai/develop/soft_core/vivado_project/test_core_add_saferegion/safe_region.v" Line 20. Module safe_region has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/zhangshuai/develop/soft_core/vivado_project/test_core_add_saferegion/test_core_add_saferegion.sim/sim_1/behav/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.picorv32(BARREL_SHIFTER=1'b1,CAT...
+Compiling module xil_defaultlib.picosoc_mem(WORDS=256)
+Compiling module xil_defaultlib.safe_region
+Compiling module xil_defaultlib.picosoc
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot picosoc_behav

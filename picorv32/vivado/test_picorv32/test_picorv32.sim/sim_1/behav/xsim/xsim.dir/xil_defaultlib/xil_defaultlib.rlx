@@ -1,0 +1,7 @@
+0.6
+2017.4
+Dec 15 2017
+20:57:24
+/home/zhangshuai/develop/soft_core/vivado_project/test_picorv32/picorv32.v,1530779230,verilog,,/home/zhangshuai/develop/soft_core/vivado_project/test_picorv32/picosoc.v,,picorv32;picorv32_axi;picorv32_axi_adapter;picorv32_pcpi_div;picorv32_pcpi_fast_mul;picorv32_pcpi_mul;picorv32_regs;picorv32_wb,,,,,,,,
+/home/zhangshuai/develop/soft_core/vivado_project/test_picorv32/picosoc.v,1534832421,verilog,,,,picosoc;picosoc_mem,,,,,,,,
+/home/zhangshuai/develop/soft_core/vivado_project/test_picorv32/test_picorv32.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
