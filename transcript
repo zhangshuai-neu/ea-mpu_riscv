@@ -1,0 +1,5275 @@
+# //  ModelSim SE 10.2c Jul 18 2013 Linux 3.19.0-32-generic
+# //
+# //  Copyright 1991-2013 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading project 3_8_decoder
+# reading /home/ckj/modelsim10.2c/modeltech/linux/../modelsim.ini
+file mkdir /home/ckj/ckj_test/picorv32
+# Loading project picorv32
+# Compile of picorv32.v was successful.
+# Compile of picosoc.v was successful.
+# 2 compiles, 0 failed with no errors. 
+vsim -voptargs=+acc work.picosoc
+# vsim -voptargs=+acc work.picosoc 
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 2 FSMs in module "picorv32(fast)".
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(79): (vopt-2685) [TFMPC] - Too few port connections for 'cpu'.  Expected 27, found 9.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(79): (vopt-2718) [TFMPC] - Missing connection for port 'trace_data'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(79): (vopt-2718) [TFMPC] - Missing connection for port 'trace_valid'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(79): (vopt-2718) [TFMPC] - Missing connection for port 'eoi'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(79): (vopt-2718) [TFMPC] - Missing connection for port 'irq'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(79): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_ready'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(79): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_wait'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(79): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rd'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(79): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_wr'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(79): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rs2'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(79): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rs1'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(79): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_insn'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(79): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_valid'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(79): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_wstrb'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(79): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_wdata'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(79): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_addr'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(79): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_write'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(79): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_read'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(79): (vopt-2718) [TFMPC] - Missing connection for port 'trap'.
+# Loading work.picosoc(fast)
+# Loading work.picorv32(fast)
+# ** Error: (vsim-3009) [TSCALE] - Module 'picosoc' does not have a timeunit/timeprecision specification in effect, but other modules do.
+#         Region: /picosoc/cpu
+# Loading work.picosoc_mem(fast)
+# Error loading design
+vsim work.picosoc
+# vsim work.picosoc 
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(79): (vopt-2685) [TFMPC] - Too few port connections for 'cpu'.  Expected 27, found 9.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(79): (vopt-2718) [TFMPC] - Missing connection for port 'trace_data'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(79): (vopt-2718) [TFMPC] - Missing connection for port 'trace_valid'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(79): (vopt-2718) [TFMPC] - Missing connection for port 'eoi'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(79): (vopt-2718) [TFMPC] - Missing connection for port 'irq'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(79): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_ready'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(79): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_wait'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(79): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rd'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(79): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_wr'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(79): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rs2'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(79): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rs1'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(79): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_insn'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(79): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_valid'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(79): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_wstrb'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(79): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_wdata'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(79): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_addr'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(79): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_write'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(79): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_read'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(79): (vopt-2718) [TFMPC] - Missing connection for port 'trap'.
+# Loading work.picosoc(fast)
+# ** Error: (vsim-3009) [TSCALE] - Module 'picosoc' does not have a timeunit/timeprecision specification in effect, but other modules do.
+#         Region: /picosoc/cpu
+# Error loading design
+vsim work.picorv32
+# vsim work.picorv32 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.picorv32(fast)
+# Compile of picorv32.v was successful.
+# Compile of picosoc.v was successful.
+# 2 compiles, 0 failed with no errors. 
+run -all
+add wave -position insertpoint  \
+sim:/picorv32/clk
+add wave -position insertpoint  \
+sim:/picorv32/mem_ready
+run -all
+vsim -voptargs=+acc work.picosoc
+# vsim -voptargs=+acc work.picosoc 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(80): (vopt-2685) [TFMPC] - Too few port connections for 'cpu'.  Expected 27, found 9.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(80): (vopt-2718) [TFMPC] - Missing connection for port 'trace_data'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(80): (vopt-2718) [TFMPC] - Missing connection for port 'trace_valid'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(80): (vopt-2718) [TFMPC] - Missing connection for port 'eoi'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(80): (vopt-2718) [TFMPC] - Missing connection for port 'irq'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(80): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_ready'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(80): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_wait'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(80): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rd'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(80): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_wr'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(80): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rs2'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(80): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rs1'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(80): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_insn'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(80): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_valid'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(80): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_wstrb'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(80): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_wdata'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(80): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_addr'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(80): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_write'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(80): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_read'.
+# ** Warning: /home/ckj/ckj_test/picorv32/picosoc.v(80): (vopt-2718) [TFMPC] - Missing connection for port 'trap'.
+# Loading work.picosoc(fast)
+# Loading work.picorv32(fast)
+# Loading work.picosoc_mem(fast)
+# ** Warning: (vsim-3017) /home/ckj/ckj_test/picorv32/picosoc.v(80): [TFMPC] - Too few port connections. Expected 27, found 10.
+#         Region: /picosoc/cpu
+# ** Warning: (vsim-3722) /home/ckj/ckj_test/picorv32/picosoc.v(80): [TFMPC] - Missing connection for port 'mem_la_read'.
+# ** Warning: (vsim-3722) /home/ckj/ckj_test/picorv32/picosoc.v(80): [TFMPC] - Missing connection for port 'mem_la_write'.
+# ** Warning: (vsim-3722) /home/ckj/ckj_test/picorv32/picosoc.v(80): [TFMPC] - Missing connection for port 'mem_la_addr'.
+# ** Warning: (vsim-3722) /home/ckj/ckj_test/picorv32/picosoc.v(80): [TFMPC] - Missing connection for port 'mem_la_wdata'.
+# ** Warning: (vsim-3722) /home/ckj/ckj_test/picorv32/picosoc.v(80): [TFMPC] - Missing connection for port 'mem_la_wstrb'.
+# ** Warning: (vsim-3722) /home/ckj/ckj_test/picorv32/picosoc.v(80): [TFMPC] - Missing connection for port 'pcpi_valid'.
+# ** Warning: (vsim-3722) /home/ckj/ckj_test/picorv32/picosoc.v(80): [TFMPC] - Missing connection for port 'pcpi_insn'.
+# ** Warning: (vsim-3722) /home/ckj/ckj_test/picorv32/picosoc.v(80): [TFMPC] - Missing connection for port 'pcpi_rs1'.
+# ** Warning: (vsim-3722) /home/ckj/ckj_test/picorv32/picosoc.v(80): [TFMPC] - Missing connection for port 'pcpi_rs2'.
+# ** Warning: (vsim-3722) /home/ckj/ckj_test/picorv32/picosoc.v(80): [TFMPC] - Missing connection for port 'pcpi_wr'.
+# ** Warning: (vsim-3722) /home/ckj/ckj_test/picorv32/picosoc.v(80): [TFMPC] - Missing connection for port 'pcpi_rd'.
+# ** Warning: (vsim-3722) /home/ckj/ckj_test/picorv32/picosoc.v(80): [TFMPC] - Missing connection for port 'pcpi_wait'.
+# ** Warning: (vsim-3722) /home/ckj/ckj_test/picorv32/picosoc.v(80): [TFMPC] - Missing connection for port 'pcpi_ready'.
+# ** Warning: (vsim-3722) /home/ckj/ckj_test/picorv32/picosoc.v(80): [TFMPC] - Missing connection for port 'irq'.
+# ** Warning: (vsim-3722) /home/ckj/ckj_test/picorv32/picosoc.v(80): [TFMPC] - Missing connection for port 'eoi'.
+# ** Warning: (vsim-3722) /home/ckj/ckj_test/picorv32/picosoc.v(80): [TFMPC] - Missing connection for port 'trace_valid'.
+# ** Warning: (vsim-3722) /home/ckj/ckj_test/picorv32/picosoc.v(80): [TFMPC] - Missing connection for port 'trace_data'.
+add wave  \
+sim:/picosoc/MEM_WORDS \
+sim:/picosoc/STACKADDR \
+sim:/picosoc/PROGADDR_RESET \
+sim:/picosoc/clk \
+sim:/picosoc/resetn \
+sim:/picosoc/sram_ready
+run -all
+# ** Warning: (vsim-7) Failed to open readmem file "/home/ckj/ckj_test/picorv32/new_asm_main.data" in read mode.
+# No such file or directory. (errno = ENOENT)    : /home/ckj/ckj_test/picorv32/picosoc.v(49)
+#    Time: 0 ps  Iteration: 0  Instance: /picosoc
+# internal_sram.mem[          0] = xxxxxxxx
+# internal_sram.mem[          1] = xxxxxxxx
+# internal_sram.mem[          2] = xxxxxxxx
+# internal_sram.mem[          3] = xxxxxxxx
+# internal_sram.mem[          4] = xxxxxxxx
+# internal_sram.mem[          5] = xxxxxxxx
+# internal_sram.mem[          6] = xxxxxxxx
+# internal_sram.mem[          7] = xxxxxxxx
+# internal_sram.mem[          8] = xxxxxxxx
+# internal_sram.mem[          9] = xxxxxxxx
+# internal_sram.mem[         10] = xxxxxxxx
+# internal_sram.mem[         11] = xxxxxxxx
+# internal_sram.mem[         12] = xxxxxxxx
+# ST_RD:   2 0x00001000
+# -- 75000
+# debugasm 00000000 0000xxxx        *
+# DECODE: 0x00000000     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 145000
+# debugasm 00000004 0000xxxx        *
+# DECODE: 0x00000004     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 215000
+# debugasm 00000008 0000xxxx        *
+# DECODE: 0x00000008     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 285000
+# debugasm 0000000c 0000xxxx        *
+# DECODE: 0x0000000c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 355000
+# debugasm 00000010 0000xxxx        *
+# DECODE: 0x00000010     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 425000
+# debugasm 00000014 0000xxxx        *
+# DECODE: 0x00000014     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 495000
+# debugasm 00000018 0000xxxx        *
+# DECODE: 0x00000018     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 565000
+# debugasm 0000001c 0000xxxx        *
+# DECODE: 0x0000001c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 635000
+# debugasm 00000020 0000xxxx        *
+# DECODE: 0x00000020     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 705000
+# debugasm 00000024 0000xxxx        *
+# DECODE: 0x00000024     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 775000
+# debugasm 00000028 0000xxxx        *
+# DECODE: 0x00000028     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 845000
+# debugasm 0000002c 0000xxxx        *
+# DECODE: 0x0000002c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 915000
+# debugasm 00000030 0000xxxx        *
+# DECODE: 0x00000030     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 985000
+# debugasm 00000034 0000xxxx        *
+# DECODE: 0x00000034     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 1055000
+# debugasm 00000038 0000xxxx        *
+# DECODE: 0x00000038     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 1125000
+# debugasm 0000003c 0000xxxx        *
+# DECODE: 0x0000003c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 1195000
+# debugasm 00000040 0000xxxx        *
+# DECODE: 0x00000040     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 1265000
+# debugasm 00000044 0000xxxx        *
+# DECODE: 0x00000044     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 1335000
+# debugasm 00000048 0000xxxx        *
+# DECODE: 0x00000048     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 1405000
+# debugasm 0000004c 0000xxxx        *
+# DECODE: 0x0000004c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 1475000
+# debugasm 00000050 0000xxxx        *
+# DECODE: 0x00000050     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 1545000
+# debugasm 00000054 0000xxxx        *
+# DECODE: 0x00000054     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 1615000
+# debugasm 00000058 0000xxxx        *
+# DECODE: 0x00000058     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 1685000
+# debugasm 0000005c 0000xxxx        *
+# DECODE: 0x0000005c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 1755000
+# debugasm 00000060 0000xxxx        *
+# DECODE: 0x00000060     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 1825000
+# debugasm 00000064 0000xxxx        *
+# DECODE: 0x00000064     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 1895000
+# debugasm 00000068 0000xxxx        *
+# DECODE: 0x00000068     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 1965000
+# debugasm 0000006c 0000xxxx        *
+# DECODE: 0x0000006c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 2035000
+# debugasm 00000070 0000xxxx        *
+# DECODE: 0x00000070     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 2105000
+# debugasm 00000074 0000xxxx        *
+# DECODE: 0x00000074     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 2175000
+# debugasm 00000078 0000xxxx        *
+# DECODE: 0x00000078     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 2245000
+# debugasm 0000007c 0000xxxx        *
+# DECODE: 0x0000007c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 2315000
+# debugasm 00000080 0000xxxx        *
+# DECODE: 0x00000080     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 2385000
+# debugasm 00000084 0000xxxx        *
+# DECODE: 0x00000084     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 2455000
+# debugasm 00000088 0000xxxx        *
+# DECODE: 0x00000088     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 2525000
+# debugasm 0000008c 0000xxxx        *
+# DECODE: 0x0000008c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 2595000
+# debugasm 00000090 0000xxxx        *
+# DECODE: 0x00000090     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 2665000
+# debugasm 00000094 0000xxxx        *
+# DECODE: 0x00000094     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 2735000
+# debugasm 00000098 0000xxxx        *
+# DECODE: 0x00000098     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 2805000
+# debugasm 0000009c 0000xxxx        *
+# DECODE: 0x0000009c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 2875000
+# debugasm 000000a0 0000xxxx        *
+# DECODE: 0x000000a0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 2945000
+# debugasm 000000a4 0000xxxx        *
+# DECODE: 0x000000a4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 3015000
+# debugasm 000000a8 0000xxxx        *
+# DECODE: 0x000000a8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 3085000
+# debugasm 000000ac 0000xxxx        *
+# DECODE: 0x000000ac     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 3155000
+# debugasm 000000b0 0000xxxx        *
+# DECODE: 0x000000b0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 3225000
+# debugasm 000000b4 0000xxxx        *
+# DECODE: 0x000000b4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 3295000
+# debugasm 000000b8 0000xxxx        *
+# DECODE: 0x000000b8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 3365000
+# debugasm 000000bc 0000xxxx        *
+# DECODE: 0x000000bc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 3435000
+# debugasm 000000c0 0000xxxx        *
+# DECODE: 0x000000c0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 3505000
+# debugasm 000000c4 0000xxxx        *
+# DECODE: 0x000000c4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 3575000
+# debugasm 000000c8 0000xxxx        *
+# DECODE: 0x000000c8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 3645000
+# debugasm 000000cc 0000xxxx        *
+# DECODE: 0x000000cc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 3715000
+# debugasm 000000d0 0000xxxx        *
+# DECODE: 0x000000d0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 3785000
+# debugasm 000000d4 0000xxxx        *
+# DECODE: 0x000000d4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 3855000
+# debugasm 000000d8 0000xxxx        *
+# DECODE: 0x000000d8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 3925000
+# debugasm 000000dc 0000xxxx        *
+# DECODE: 0x000000dc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 3995000
+# debugasm 000000e0 0000xxxx        *
+# DECODE: 0x000000e0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 4065000
+# debugasm 000000e4 0000xxxx        *
+# DECODE: 0x000000e4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 4135000
+# debugasm 000000e8 0000xxxx        *
+# DECODE: 0x000000e8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 4205000
+# debugasm 000000ec 0000xxxx        *
+# DECODE: 0x000000ec     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 4275000
+# debugasm 000000f0 0000xxxx        *
+# DECODE: 0x000000f0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 4345000
+# debugasm 000000f4 0000xxxx        *
+# DECODE: 0x000000f4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 4415000
+# debugasm 000000f8 0000xxxx        *
+# DECODE: 0x000000f8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 4485000
+# debugasm 000000fc 0000xxxx        *
+# DECODE: 0x000000fc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 4555000
+# debugasm 00000100 0000xxxx        *
+# DECODE: 0x00000100     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 4625000
+# debugasm 00000104 0000xxxx        *
+# DECODE: 0x00000104     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 4695000
+# debugasm 00000108 0000xxxx        *
+# DECODE: 0x00000108     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 4765000
+# debugasm 0000010c 0000xxxx        *
+# DECODE: 0x0000010c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 4835000
+# debugasm 00000110 0000xxxx        *
+# DECODE: 0x00000110     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 4905000
+# debugasm 00000114 0000xxxx        *
+# DECODE: 0x00000114     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 4975000
+# debugasm 00000118 0000xxxx        *
+# DECODE: 0x00000118     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 5045000
+# debugasm 0000011c 0000xxxx        *
+# DECODE: 0x0000011c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 5115000
+# debugasm 00000120 0000xxxx        *
+# DECODE: 0x00000120     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 5185000
+# debugasm 00000124 0000xxxx        *
+# DECODE: 0x00000124     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 5255000
+# debugasm 00000128 0000xxxx        *
+# DECODE: 0x00000128     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 5325000
+# debugasm 0000012c 0000xxxx        *
+# DECODE: 0x0000012c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 5395000
+# debugasm 00000130 0000xxxx        *
+# DECODE: 0x00000130     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 5465000
+# debugasm 00000134 0000xxxx        *
+# DECODE: 0x00000134     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 5535000
+# debugasm 00000138 0000xxxx        *
+# DECODE: 0x00000138     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 5605000
+# debugasm 0000013c 0000xxxx        *
+# DECODE: 0x0000013c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 5675000
+# debugasm 00000140 0000xxxx        *
+# DECODE: 0x00000140     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 5745000
+# debugasm 00000144 0000xxxx        *
+# DECODE: 0x00000144     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 5815000
+# debugasm 00000148 0000xxxx        *
+# DECODE: 0x00000148     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 5885000
+# debugasm 0000014c 0000xxxx        *
+# DECODE: 0x0000014c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 5955000
+# debugasm 00000150 0000xxxx        *
+# DECODE: 0x00000150     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 6025000
+# debugasm 00000154 0000xxxx        *
+# DECODE: 0x00000154     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 6095000
+# debugasm 00000158 0000xxxx        *
+# DECODE: 0x00000158     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 6165000
+# debugasm 0000015c 0000xxxx        *
+# DECODE: 0x0000015c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 6235000
+# debugasm 00000160 0000xxxx        *
+# DECODE: 0x00000160     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 6305000
+# debugasm 00000164 0000xxxx        *
+# DECODE: 0x00000164     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 6375000
+# debugasm 00000168 0000xxxx        *
+# DECODE: 0x00000168     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 6445000
+# debugasm 0000016c 0000xxxx        *
+# DECODE: 0x0000016c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 6515000
+# debugasm 00000170 0000xxxx        *
+# DECODE: 0x00000170     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 6585000
+# debugasm 00000174 0000xxxx        *
+# DECODE: 0x00000174     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 6655000
+# debugasm 00000178 0000xxxx        *
+# DECODE: 0x00000178     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 6725000
+# debugasm 0000017c 0000xxxx        *
+# DECODE: 0x0000017c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 6795000
+# debugasm 00000180 0000xxxx        *
+# DECODE: 0x00000180     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 6865000
+# debugasm 00000184 0000xxxx        *
+# DECODE: 0x00000184     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 6935000
+# debugasm 00000188 0000xxxx        *
+# DECODE: 0x00000188     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 7005000
+# debugasm 0000018c 0000xxxx        *
+# DECODE: 0x0000018c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 7075000
+# debugasm 00000190 0000xxxx        *
+# DECODE: 0x00000190     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 7145000
+# debugasm 00000194 0000xxxx        *
+# DECODE: 0x00000194     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 7215000
+# debugasm 00000198 0000xxxx        *
+# DECODE: 0x00000198     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 7285000
+# debugasm 0000019c 0000xxxx        *
+# DECODE: 0x0000019c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 7355000
+# debugasm 000001a0 0000xxxx        *
+# DECODE: 0x000001a0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 7425000
+# debugasm 000001a4 0000xxxx        *
+# DECODE: 0x000001a4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 7495000
+# debugasm 000001a8 0000xxxx        *
+# DECODE: 0x000001a8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 7565000
+# debugasm 000001ac 0000xxxx        *
+# DECODE: 0x000001ac     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 7635000
+# debugasm 000001b0 0000xxxx        *
+# DECODE: 0x000001b0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 7705000
+# debugasm 000001b4 0000xxxx        *
+# DECODE: 0x000001b4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 7775000
+# debugasm 000001b8 0000xxxx        *
+# DECODE: 0x000001b8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 7845000
+# debugasm 000001bc 0000xxxx        *
+# DECODE: 0x000001bc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 7915000
+# debugasm 000001c0 0000xxxx        *
+# DECODE: 0x000001c0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 7985000
+# debugasm 000001c4 0000xxxx        *
+# DECODE: 0x000001c4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 8055000
+# debugasm 000001c8 0000xxxx        *
+# DECODE: 0x000001c8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 8125000
+# debugasm 000001cc 0000xxxx        *
+# DECODE: 0x000001cc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 8195000
+# debugasm 000001d0 0000xxxx        *
+# DECODE: 0x000001d0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 8265000
+# debugasm 000001d4 0000xxxx        *
+# DECODE: 0x000001d4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 8335000
+# debugasm 000001d8 0000xxxx        *
+# DECODE: 0x000001d8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 8405000
+# debugasm 000001dc 0000xxxx        *
+# DECODE: 0x000001dc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 8475000
+# debugasm 000001e0 0000xxxx        *
+# DECODE: 0x000001e0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 8545000
+# debugasm 000001e4 0000xxxx        *
+# DECODE: 0x000001e4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 8615000
+# debugasm 000001e8 0000xxxx        *
+# DECODE: 0x000001e8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 8685000
+# debugasm 000001ec 0000xxxx        *
+# DECODE: 0x000001ec     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 8755000
+# debugasm 000001f0 0000xxxx        *
+# DECODE: 0x000001f0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 8825000
+# debugasm 000001f4 0000xxxx        *
+# DECODE: 0x000001f4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 8895000
+# debugasm 000001f8 0000xxxx        *
+# DECODE: 0x000001f8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 8965000
+# debugasm 000001fc 0000xxxx        *
+# DECODE: 0x000001fc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 9035000
+# debugasm 00000200 0000xxxx        *
+# DECODE: 0x00000200     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 9105000
+# debugasm 00000204 0000xxxx        *
+# DECODE: 0x00000204     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 9175000
+# debugasm 00000208 0000xxxx        *
+# DECODE: 0x00000208     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 9245000
+# debugasm 0000020c 0000xxxx        *
+# DECODE: 0x0000020c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 9315000
+# debugasm 00000210 0000xxxx        *
+# DECODE: 0x00000210     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 9385000
+# debugasm 00000214 0000xxxx        *
+# DECODE: 0x00000214     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 9455000
+# debugasm 00000218 0000xxxx        *
+# DECODE: 0x00000218     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 9525000
+# debugasm 0000021c 0000xxxx        *
+# DECODE: 0x0000021c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 9595000
+# debugasm 00000220 0000xxxx        *
+# DECODE: 0x00000220     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 9665000
+# debugasm 00000224 0000xxxx        *
+# DECODE: 0x00000224     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 9735000
+# debugasm 00000228 0000xxxx        *
+# DECODE: 0x00000228     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 9805000
+# debugasm 0000022c 0000xxxx        *
+# DECODE: 0x0000022c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 9875000
+# debugasm 00000230 0000xxxx        *
+# DECODE: 0x00000230     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 9945000
+# debugasm 00000234 0000xxxx        *
+# DECODE: 0x00000234     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 10015000
+# debugasm 00000238 0000xxxx        *
+# DECODE: 0x00000238     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 10085000
+# debugasm 0000023c 0000xxxx        *
+# DECODE: 0x0000023c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 10155000
+# debugasm 00000240 0000xxxx        *
+# DECODE: 0x00000240     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 10225000
+# debugasm 00000244 0000xxxx        *
+# DECODE: 0x00000244     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 10295000
+# debugasm 00000248 0000xxxx        *
+# DECODE: 0x00000248     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 10365000
+# debugasm 0000024c 0000xxxx        *
+# DECODE: 0x0000024c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 10435000
+# debugasm 00000250 0000xxxx        *
+# DECODE: 0x00000250     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 10505000
+# debugasm 00000254 0000xxxx        *
+# DECODE: 0x00000254     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 10575000
+# debugasm 00000258 0000xxxx        *
+# DECODE: 0x00000258     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 10645000
+# debugasm 0000025c 0000xxxx        *
+# DECODE: 0x0000025c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 10715000
+# debugasm 00000260 0000xxxx        *
+# DECODE: 0x00000260     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 10785000
+# debugasm 00000264 0000xxxx        *
+# DECODE: 0x00000264     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 10855000
+# debugasm 00000268 0000xxxx        *
+# DECODE: 0x00000268     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 10925000
+# debugasm 0000026c 0000xxxx        *
+# DECODE: 0x0000026c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 10995000
+# debugasm 00000270 0000xxxx        *
+# DECODE: 0x00000270     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 11065000
+# debugasm 00000274 0000xxxx        *
+# DECODE: 0x00000274     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 11135000
+# debugasm 00000278 0000xxxx        *
+# DECODE: 0x00000278     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 11205000
+# debugasm 0000027c 0000xxxx        *
+# DECODE: 0x0000027c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 11275000
+# debugasm 00000280 0000xxxx        *
+# DECODE: 0x00000280     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 11345000
+# debugasm 00000284 0000xxxx        *
+# DECODE: 0x00000284     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 11415000
+# debugasm 00000288 0000xxxx        *
+# DECODE: 0x00000288     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 11485000
+# debugasm 0000028c 0000xxxx        *
+# DECODE: 0x0000028c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 11555000
+# debugasm 00000290 0000xxxx        *
+# DECODE: 0x00000290     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 11625000
+# debugasm 00000294 0000xxxx        *
+# DECODE: 0x00000294     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 11695000
+# debugasm 00000298 0000xxxx        *
+# DECODE: 0x00000298     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 11765000
+# debugasm 0000029c 0000xxxx        *
+# DECODE: 0x0000029c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 11835000
+# debugasm 000002a0 0000xxxx        *
+# DECODE: 0x000002a0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 11905000
+# debugasm 000002a4 0000xxxx        *
+# DECODE: 0x000002a4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 11975000
+# debugasm 000002a8 0000xxxx        *
+# DECODE: 0x000002a8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 12045000
+# debugasm 000002ac 0000xxxx        *
+# DECODE: 0x000002ac     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 12115000
+# debugasm 000002b0 0000xxxx        *
+# DECODE: 0x000002b0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 12185000
+# debugasm 000002b4 0000xxxx        *
+# DECODE: 0x000002b4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 12255000
+# debugasm 000002b8 0000xxxx        *
+# DECODE: 0x000002b8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 12325000
+# debugasm 000002bc 0000xxxx        *
+# DECODE: 0x000002bc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 12395000
+# debugasm 000002c0 0000xxxx        *
+# DECODE: 0x000002c0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 12465000
+# debugasm 000002c4 0000xxxx        *
+# DECODE: 0x000002c4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 12535000
+# debugasm 000002c8 0000xxxx        *
+# DECODE: 0x000002c8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 12605000
+# debugasm 000002cc 0000xxxx        *
+# DECODE: 0x000002cc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 12675000
+# debugasm 000002d0 0000xxxx        *
+# DECODE: 0x000002d0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 12745000
+# debugasm 000002d4 0000xxxx        *
+# DECODE: 0x000002d4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 12815000
+# debugasm 000002d8 0000xxxx        *
+# DECODE: 0x000002d8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 12885000
+# debugasm 000002dc 0000xxxx        *
+# DECODE: 0x000002dc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 12955000
+# debugasm 000002e0 0000xxxx        *
+# DECODE: 0x000002e0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 13025000
+# debugasm 000002e4 0000xxxx        *
+# DECODE: 0x000002e4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 13095000
+# debugasm 000002e8 0000xxxx        *
+# DECODE: 0x000002e8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 13165000
+# debugasm 000002ec 0000xxxx        *
+# DECODE: 0x000002ec     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 13235000
+# debugasm 000002f0 0000xxxx        *
+# DECODE: 0x000002f0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 13305000
+# debugasm 000002f4 0000xxxx        *
+# DECODE: 0x000002f4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 13375000
+# debugasm 000002f8 0000xxxx        *
+# DECODE: 0x000002f8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 13445000
+# debugasm 000002fc 0000xxxx        *
+# DECODE: 0x000002fc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 13515000
+# debugasm 00000300 0000xxxx        *
+# DECODE: 0x00000300     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 13585000
+# debugasm 00000304 0000xxxx        *
+# DECODE: 0x00000304     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 13655000
+# debugasm 00000308 0000xxxx        *
+# DECODE: 0x00000308     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 13725000
+# debugasm 0000030c 0000xxxx        *
+# DECODE: 0x0000030c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 13795000
+# debugasm 00000310 0000xxxx        *
+# DECODE: 0x00000310     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 13865000
+# debugasm 00000314 0000xxxx        *
+# DECODE: 0x00000314     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 13935000
+# debugasm 00000318 0000xxxx        *
+# DECODE: 0x00000318     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 14005000
+# debugasm 0000031c 0000xxxx        *
+# DECODE: 0x0000031c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 14075000
+# debugasm 00000320 0000xxxx        *
+# DECODE: 0x00000320     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 14145000
+# debugasm 00000324 0000xxxx        *
+# DECODE: 0x00000324     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 14215000
+# debugasm 00000328 0000xxxx        *
+# DECODE: 0x00000328     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 14285000
+# debugasm 0000032c 0000xxxx        *
+# DECODE: 0x0000032c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 14355000
+# debugasm 00000330 0000xxxx        *
+# DECODE: 0x00000330     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 14425000
+# debugasm 00000334 0000xxxx        *
+# DECODE: 0x00000334     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 14495000
+# debugasm 00000338 0000xxxx        *
+# DECODE: 0x00000338     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 14565000
+# debugasm 0000033c 0000xxxx        *
+# DECODE: 0x0000033c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 14635000
+# debugasm 00000340 0000xxxx        *
+# DECODE: 0x00000340     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 14705000
+# debugasm 00000344 0000xxxx        *
+# DECODE: 0x00000344     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 14775000
+# debugasm 00000348 0000xxxx        *
+# DECODE: 0x00000348     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 14845000
+# debugasm 0000034c 0000xxxx        *
+# DECODE: 0x0000034c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 14915000
+# debugasm 00000350 0000xxxx        *
+# DECODE: 0x00000350     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 14985000
+# debugasm 00000354 0000xxxx        *
+# DECODE: 0x00000354     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 15055000
+# debugasm 00000358 0000xxxx        *
+# DECODE: 0x00000358     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 15125000
+# debugasm 0000035c 0000xxxx        *
+# DECODE: 0x0000035c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 15195000
+# debugasm 00000360 0000xxxx        *
+# DECODE: 0x00000360     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 15265000
+# debugasm 00000364 0000xxxx        *
+# DECODE: 0x00000364     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 15335000
+# debugasm 00000368 0000xxxx        *
+# DECODE: 0x00000368     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 15405000
+# debugasm 0000036c 0000xxxx        *
+# DECODE: 0x0000036c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 15475000
+# debugasm 00000370 0000xxxx        *
+# DECODE: 0x00000370     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 15545000
+# debugasm 00000374 0000xxxx        *
+# DECODE: 0x00000374     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 15615000
+# debugasm 00000378 0000xxxx        *
+# DECODE: 0x00000378     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 15685000
+# debugasm 0000037c 0000xxxx        *
+# DECODE: 0x0000037c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 15755000
+# debugasm 00000380 0000xxxx        *
+# DECODE: 0x00000380     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 15825000
+# debugasm 00000384 0000xxxx        *
+# DECODE: 0x00000384     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 15895000
+# debugasm 00000388 0000xxxx        *
+# DECODE: 0x00000388     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 15965000
+# debugasm 0000038c 0000xxxx        *
+# DECODE: 0x0000038c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 16035000
+# debugasm 00000390 0000xxxx        *
+# DECODE: 0x00000390     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 16105000
+# debugasm 00000394 0000xxxx        *
+# DECODE: 0x00000394     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 16175000
+# debugasm 00000398 0000xxxx        *
+# DECODE: 0x00000398     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 16245000
+# debugasm 0000039c 0000xxxx        *
+# DECODE: 0x0000039c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 16315000
+# debugasm 000003a0 0000xxxx        *
+# DECODE: 0x000003a0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 16385000
+# debugasm 000003a4 0000xxxx        *
+# DECODE: 0x000003a4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 16455000
+# debugasm 000003a8 0000xxxx        *
+# DECODE: 0x000003a8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 16525000
+# debugasm 000003ac 0000xxxx        *
+# DECODE: 0x000003ac     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 16595000
+# debugasm 000003b0 0000xxxx        *
+# DECODE: 0x000003b0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 16665000
+# debugasm 000003b4 0000xxxx        *
+# DECODE: 0x000003b4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 16735000
+# debugasm 000003b8 0000xxxx        *
+# DECODE: 0x000003b8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 16805000
+# debugasm 000003bc 0000xxxx        *
+# DECODE: 0x000003bc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 16875000
+# debugasm 000003c0 0000xxxx        *
+# DECODE: 0x000003c0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 16945000
+# debugasm 000003c4 0000xxxx        *
+# DECODE: 0x000003c4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 17015000
+# debugasm 000003c8 0000xxxx        *
+# DECODE: 0x000003c8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 17085000
+# debugasm 000003cc 0000xxxx        *
+# DECODE: 0x000003cc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 17155000
+# debugasm 000003d0 0000xxxx        *
+# DECODE: 0x000003d0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 17225000
+# debugasm 000003d4 0000xxxx        *
+# DECODE: 0x000003d4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 17295000
+# debugasm 000003d8 0000xxxx        *
+# DECODE: 0x000003d8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 17365000
+# debugasm 000003dc 0000xxxx        *
+# DECODE: 0x000003dc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 17435000
+# debugasm 000003e0 0000xxxx        *
+# DECODE: 0x000003e0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 17505000
+# debugasm 000003e4 0000xxxx        *
+# DECODE: 0x000003e4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 17575000
+# debugasm 000003e8 0000xxxx        *
+# DECODE: 0x000003e8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 17645000
+# debugasm 000003ec 0000xxxx        *
+# DECODE: 0x000003ec     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 17715000
+# debugasm 000003f0 0000xxxx        *
+# DECODE: 0x000003f0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 17785000
+# debugasm 000003f4 0000xxxx        *
+# DECODE: 0x000003f4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 17855000
+# debugasm 000003f8 0000xxxx        *
+# DECODE: 0x000003f8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 17925000
+# debugasm 000003fc 0000xxxx        *
+# DECODE: 0x000003fc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 17995000
+# debugasm 00000400 0000xxxx        *
+# DECODE: 0x00000400     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 18065000
+# debugasm 00000404 0000xxxx        *
+# DECODE: 0x00000404     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 18135000
+# debugasm 00000408 0000xxxx        *
+# DECODE: 0x00000408     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 18205000
+# debugasm 0000040c 0000xxxx        *
+# DECODE: 0x0000040c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 18275000
+# debugasm 00000410 0000xxxx        *
+# DECODE: 0x00000410     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 18345000
+# debugasm 00000414 0000xxxx        *
+# DECODE: 0x00000414     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 18415000
+# debugasm 00000418 0000xxxx        *
+# DECODE: 0x00000418     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 18485000
+# debugasm 0000041c 0000xxxx        *
+# DECODE: 0x0000041c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 18555000
+# debugasm 00000420 0000xxxx        *
+# DECODE: 0x00000420     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 18625000
+# debugasm 00000424 0000xxxx        *
+# DECODE: 0x00000424     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 18695000
+# debugasm 00000428 0000xxxx        *
+# DECODE: 0x00000428     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 18765000
+# debugasm 0000042c 0000xxxx        *
+# DECODE: 0x0000042c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 18835000
+# debugasm 00000430 0000xxxx        *
+# DECODE: 0x00000430     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 18905000
+# debugasm 00000434 0000xxxx        *
+# DECODE: 0x00000434     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 18975000
+# debugasm 00000438 0000xxxx        *
+# DECODE: 0x00000438     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 19045000
+# debugasm 0000043c 0000xxxx        *
+# DECODE: 0x0000043c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 19115000
+# debugasm 00000440 0000xxxx        *
+# DECODE: 0x00000440     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 19185000
+# debugasm 00000444 0000xxxx        *
+# DECODE: 0x00000444     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 19255000
+# debugasm 00000448 0000xxxx        *
+# DECODE: 0x00000448     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 19325000
+# debugasm 0000044c 0000xxxx        *
+# DECODE: 0x0000044c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 19395000
+# debugasm 00000450 0000xxxx        *
+# DECODE: 0x00000450     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 19465000
+# debugasm 00000454 0000xxxx        *
+# DECODE: 0x00000454     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 19535000
+# debugasm 00000458 0000xxxx        *
+# DECODE: 0x00000458     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 19605000
+# debugasm 0000045c 0000xxxx        *
+# DECODE: 0x0000045c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 19675000
+# debugasm 00000460 0000xxxx        *
+# DECODE: 0x00000460     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 19745000
+# debugasm 00000464 0000xxxx        *
+# DECODE: 0x00000464     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 19815000
+# debugasm 00000468 0000xxxx        *
+# DECODE: 0x00000468     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 19885000
+# debugasm 0000046c 0000xxxx        *
+# DECODE: 0x0000046c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 19955000
+# debugasm 00000470 0000xxxx        *
+# DECODE: 0x00000470     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 20025000
+# debugasm 00000474 0000xxxx        *
+# DECODE: 0x00000474     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 20095000
+# debugasm 00000478 0000xxxx        *
+# DECODE: 0x00000478     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 20165000
+# debugasm 0000047c 0000xxxx        *
+# DECODE: 0x0000047c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 20235000
+# debugasm 00000480 0000xxxx        *
+# DECODE: 0x00000480     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 20305000
+# debugasm 00000484 0000xxxx        *
+# DECODE: 0x00000484     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 20375000
+# debugasm 00000488 0000xxxx        *
+# DECODE: 0x00000488     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 20445000
+# debugasm 0000048c 0000xxxx        *
+# DECODE: 0x0000048c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 20515000
+# debugasm 00000490 0000xxxx        *
+# DECODE: 0x00000490     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 20585000
+# debugasm 00000494 0000xxxx        *
+# DECODE: 0x00000494     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 20655000
+# debugasm 00000498 0000xxxx        *
+# DECODE: 0x00000498     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 20725000
+# debugasm 0000049c 0000xxxx        *
+# DECODE: 0x0000049c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 20795000
+# debugasm 000004a0 0000xxxx        *
+# DECODE: 0x000004a0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 20865000
+# debugasm 000004a4 0000xxxx        *
+# DECODE: 0x000004a4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 20935000
+# debugasm 000004a8 0000xxxx        *
+# DECODE: 0x000004a8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 21005000
+# debugasm 000004ac 0000xxxx        *
+# DECODE: 0x000004ac     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 21075000
+# debugasm 000004b0 0000xxxx        *
+# DECODE: 0x000004b0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 21145000
+# debugasm 000004b4 0000xxxx        *
+# DECODE: 0x000004b4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 21215000
+# debugasm 000004b8 0000xxxx        *
+# DECODE: 0x000004b8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 21285000
+# debugasm 000004bc 0000xxxx        *
+# DECODE: 0x000004bc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 21355000
+# debugasm 000004c0 0000xxxx        *
+# DECODE: 0x000004c0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 21425000
+# debugasm 000004c4 0000xxxx        *
+# DECODE: 0x000004c4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 21495000
+# debugasm 000004c8 0000xxxx        *
+# DECODE: 0x000004c8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 21565000
+# debugasm 000004cc 0000xxxx        *
+# DECODE: 0x000004cc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 21635000
+# debugasm 000004d0 0000xxxx        *
+# DECODE: 0x000004d0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 21705000
+# debugasm 000004d4 0000xxxx        *
+# DECODE: 0x000004d4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 21775000
+# debugasm 000004d8 0000xxxx        *
+# DECODE: 0x000004d8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 21845000
+# debugasm 000004dc 0000xxxx        *
+# DECODE: 0x000004dc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 21915000
+# debugasm 000004e0 0000xxxx        *
+# DECODE: 0x000004e0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 21985000
+# debugasm 000004e4 0000xxxx        *
+# DECODE: 0x000004e4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 22055000
+# debugasm 000004e8 0000xxxx        *
+# DECODE: 0x000004e8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 22125000
+# debugasm 000004ec 0000xxxx        *
+# DECODE: 0x000004ec     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 22195000
+# debugasm 000004f0 0000xxxx        *
+# DECODE: 0x000004f0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 22265000
+# debugasm 000004f4 0000xxxx        *
+# DECODE: 0x000004f4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 22335000
+# debugasm 000004f8 0000xxxx        *
+# DECODE: 0x000004f8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 22405000
+# debugasm 000004fc 0000xxxx        *
+# DECODE: 0x000004fc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 22475000
+# debugasm 00000500 0000xxxx        *
+# DECODE: 0x00000500     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 22545000
+# debugasm 00000504 0000xxxx        *
+# DECODE: 0x00000504     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 22615000
+# debugasm 00000508 0000xxxx        *
+# DECODE: 0x00000508     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 22685000
+# debugasm 0000050c 0000xxxx        *
+# DECODE: 0x0000050c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 22755000
+# debugasm 00000510 0000xxxx        *
+# DECODE: 0x00000510     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 22825000
+# debugasm 00000514 0000xxxx        *
+# DECODE: 0x00000514     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 22895000
+# debugasm 00000518 0000xxxx        *
+# DECODE: 0x00000518     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 22965000
+# debugasm 0000051c 0000xxxx        *
+# DECODE: 0x0000051c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 23035000
+# debugasm 00000520 0000xxxx        *
+# DECODE: 0x00000520     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 23105000
+# debugasm 00000524 0000xxxx        *
+# DECODE: 0x00000524     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 23175000
+# debugasm 00000528 0000xxxx        *
+# DECODE: 0x00000528     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 23245000
+# debugasm 0000052c 0000xxxx        *
+# DECODE: 0x0000052c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 23315000
+# debugasm 00000530 0000xxxx        *
+# DECODE: 0x00000530     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 23385000
+# debugasm 00000534 0000xxxx        *
+# DECODE: 0x00000534     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 23455000
+# debugasm 00000538 0000xxxx        *
+# DECODE: 0x00000538     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 23525000
+# debugasm 0000053c 0000xxxx        *
+# DECODE: 0x0000053c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 23595000
+# debugasm 00000540 0000xxxx        *
+# DECODE: 0x00000540     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 23665000
+# debugasm 00000544 0000xxxx        *
+# DECODE: 0x00000544     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 23735000
+# debugasm 00000548 0000xxxx        *
+# DECODE: 0x00000548     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 23805000
+# debugasm 0000054c 0000xxxx        *
+# DECODE: 0x0000054c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 23875000
+# debugasm 00000550 0000xxxx        *
+# DECODE: 0x00000550     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 23945000
+# debugasm 00000554 0000xxxx        *
+# DECODE: 0x00000554     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 24015000
+# debugasm 00000558 0000xxxx        *
+# DECODE: 0x00000558     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 24085000
+# debugasm 0000055c 0000xxxx        *
+# DECODE: 0x0000055c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 24155000
+# debugasm 00000560 0000xxxx        *
+# DECODE: 0x00000560     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 24225000
+# debugasm 00000564 0000xxxx        *
+# DECODE: 0x00000564     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 24295000
+# debugasm 00000568 0000xxxx        *
+# DECODE: 0x00000568     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 24365000
+# debugasm 0000056c 0000xxxx        *
+# DECODE: 0x0000056c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 24435000
+# debugasm 00000570 0000xxxx        *
+# DECODE: 0x00000570     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 24505000
+# debugasm 00000574 0000xxxx        *
+# DECODE: 0x00000574     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 24575000
+# debugasm 00000578 0000xxxx        *
+# DECODE: 0x00000578     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 24645000
+# debugasm 0000057c 0000xxxx        *
+# DECODE: 0x0000057c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 24715000
+# debugasm 00000580 0000xxxx        *
+# DECODE: 0x00000580     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 24785000
+# debugasm 00000584 0000xxxx        *
+# DECODE: 0x00000584     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 24855000
+# debugasm 00000588 0000xxxx        *
+# DECODE: 0x00000588     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 24925000
+# debugasm 0000058c 0000xxxx        *
+# DECODE: 0x0000058c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 24995000
+# debugasm 00000590 0000xxxx        *
+# DECODE: 0x00000590     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 25065000
+# debugasm 00000594 0000xxxx        *
+# DECODE: 0x00000594     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 25135000
+# debugasm 00000598 0000xxxx        *
+# DECODE: 0x00000598     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 25205000
+# debugasm 0000059c 0000xxxx        *
+# DECODE: 0x0000059c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 25275000
+# debugasm 000005a0 0000xxxx        *
+# DECODE: 0x000005a0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 25345000
+# debugasm 000005a4 0000xxxx        *
+# DECODE: 0x000005a4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 25415000
+# debugasm 000005a8 0000xxxx        *
+# DECODE: 0x000005a8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 25485000
+# debugasm 000005ac 0000xxxx        *
+# DECODE: 0x000005ac     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 25555000
+# debugasm 000005b0 0000xxxx        *
+# DECODE: 0x000005b0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 25625000
+# debugasm 000005b4 0000xxxx        *
+# DECODE: 0x000005b4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 25695000
+# debugasm 000005b8 0000xxxx        *
+# DECODE: 0x000005b8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 25765000
+# debugasm 000005bc 0000xxxx        *
+# DECODE: 0x000005bc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 25835000
+# debugasm 000005c0 0000xxxx        *
+# DECODE: 0x000005c0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 25905000
+# debugasm 000005c4 0000xxxx        *
+# DECODE: 0x000005c4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 25975000
+# debugasm 000005c8 0000xxxx        *
+# DECODE: 0x000005c8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 26045000
+# debugasm 000005cc 0000xxxx        *
+# DECODE: 0x000005cc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 26115000
+# debugasm 000005d0 0000xxxx        *
+# DECODE: 0x000005d0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 26185000
+# debugasm 000005d4 0000xxxx        *
+# DECODE: 0x000005d4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 26255000
+# debugasm 000005d8 0000xxxx        *
+# DECODE: 0x000005d8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 26325000
+# debugasm 000005dc 0000xxxx        *
+# DECODE: 0x000005dc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 26395000
+# debugasm 000005e0 0000xxxx        *
+# DECODE: 0x000005e0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 26465000
+# debugasm 000005e4 0000xxxx        *
+# DECODE: 0x000005e4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 26535000
+# debugasm 000005e8 0000xxxx        *
+# DECODE: 0x000005e8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 26605000
+# debugasm 000005ec 0000xxxx        *
+# DECODE: 0x000005ec     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 26675000
+# debugasm 000005f0 0000xxxx        *
+# DECODE: 0x000005f0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 26745000
+# debugasm 000005f4 0000xxxx        *
+# DECODE: 0x000005f4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 26815000
+# debugasm 000005f8 0000xxxx        *
+# DECODE: 0x000005f8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 26885000
+# debugasm 000005fc 0000xxxx        *
+# DECODE: 0x000005fc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 26955000
+# debugasm 00000600 0000xxxx        *
+# DECODE: 0x00000600     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 27025000
+# debugasm 00000604 0000xxxx        *
+# DECODE: 0x00000604     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 27095000
+# debugasm 00000608 0000xxxx        *
+# DECODE: 0x00000608     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 27165000
+# debugasm 0000060c 0000xxxx        *
+# DECODE: 0x0000060c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 27235000
+# debugasm 00000610 0000xxxx        *
+# DECODE: 0x00000610     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 27305000
+# debugasm 00000614 0000xxxx        *
+# DECODE: 0x00000614     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 27375000
+# debugasm 00000618 0000xxxx        *
+# DECODE: 0x00000618     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 27445000
+# debugasm 0000061c 0000xxxx        *
+# DECODE: 0x0000061c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 27515000
+# debugasm 00000620 0000xxxx        *
+# DECODE: 0x00000620     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 27585000
+# debugasm 00000624 0000xxxx        *
+# DECODE: 0x00000624     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 27655000
+# debugasm 00000628 0000xxxx        *
+# DECODE: 0x00000628     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 27725000
+# debugasm 0000062c 0000xxxx        *
+# DECODE: 0x0000062c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 27795000
+# debugasm 00000630 0000xxxx        *
+# DECODE: 0x00000630     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 27865000
+# debugasm 00000634 0000xxxx        *
+# DECODE: 0x00000634     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 27935000
+# debugasm 00000638 0000xxxx        *
+# DECODE: 0x00000638     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 28005000
+# debugasm 0000063c 0000xxxx        *
+# DECODE: 0x0000063c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 28075000
+# debugasm 00000640 0000xxxx        *
+# DECODE: 0x00000640     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 28145000
+# debugasm 00000644 0000xxxx        *
+# DECODE: 0x00000644     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 28215000
+# debugasm 00000648 0000xxxx        *
+# DECODE: 0x00000648     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 28285000
+# debugasm 0000064c 0000xxxx        *
+# DECODE: 0x0000064c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 28355000
+# debugasm 00000650 0000xxxx        *
+# DECODE: 0x00000650     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 28425000
+# debugasm 00000654 0000xxxx        *
+# DECODE: 0x00000654     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 28495000
+# debugasm 00000658 0000xxxx        *
+# DECODE: 0x00000658     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 28565000
+# debugasm 0000065c 0000xxxx        *
+# DECODE: 0x0000065c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 28635000
+# debugasm 00000660 0000xxxx        *
+# DECODE: 0x00000660     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 28705000
+# debugasm 00000664 0000xxxx        *
+# DECODE: 0x00000664     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 28775000
+# debugasm 00000668 0000xxxx        *
+# DECODE: 0x00000668     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 28845000
+# debugasm 0000066c 0000xxxx        *
+# DECODE: 0x0000066c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 28915000
+# debugasm 00000670 0000xxxx        *
+# DECODE: 0x00000670     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 28985000
+# debugasm 00000674 0000xxxx        *
+# DECODE: 0x00000674     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 29055000
+# debugasm 00000678 0000xxxx        *
+# DECODE: 0x00000678     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 29125000
+# debugasm 0000067c 0000xxxx        *
+# DECODE: 0x0000067c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 29195000
+# debugasm 00000680 0000xxxx        *
+# DECODE: 0x00000680     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 29265000
+# debugasm 00000684 0000xxxx        *
+# DECODE: 0x00000684     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 29335000
+# debugasm 00000688 0000xxxx        *
+# DECODE: 0x00000688     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 29405000
+# debugasm 0000068c 0000xxxx        *
+# DECODE: 0x0000068c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 29475000
+# debugasm 00000690 0000xxxx        *
+# DECODE: 0x00000690     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 29545000
+# debugasm 00000694 0000xxxx        *
+# DECODE: 0x00000694     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 29615000
+# debugasm 00000698 0000xxxx        *
+# DECODE: 0x00000698     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 29685000
+# debugasm 0000069c 0000xxxx        *
+# DECODE: 0x0000069c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 29755000
+# debugasm 000006a0 0000xxxx        *
+# DECODE: 0x000006a0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 29825000
+# debugasm 000006a4 0000xxxx        *
+# DECODE: 0x000006a4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 29895000
+# debugasm 000006a8 0000xxxx        *
+# DECODE: 0x000006a8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 29965000
+# debugasm 000006ac 0000xxxx        *
+# DECODE: 0x000006ac     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 30035000
+# debugasm 000006b0 0000xxxx        *
+# DECODE: 0x000006b0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 30105000
+# debugasm 000006b4 0000xxxx        *
+# DECODE: 0x000006b4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 30175000
+# debugasm 000006b8 0000xxxx        *
+# DECODE: 0x000006b8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 30245000
+# debugasm 000006bc 0000xxxx        *
+# DECODE: 0x000006bc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 30315000
+# debugasm 000006c0 0000xxxx        *
+# DECODE: 0x000006c0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 30385000
+# debugasm 000006c4 0000xxxx        *
+# DECODE: 0x000006c4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 30455000
+# debugasm 000006c8 0000xxxx        *
+# DECODE: 0x000006c8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 30525000
+# debugasm 000006cc 0000xxxx        *
+# DECODE: 0x000006cc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 30595000
+# debugasm 000006d0 0000xxxx        *
+# DECODE: 0x000006d0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 30665000
+# debugasm 000006d4 0000xxxx        *
+# DECODE: 0x000006d4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 30735000
+# debugasm 000006d8 0000xxxx        *
+# DECODE: 0x000006d8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 30805000
+# debugasm 000006dc 0000xxxx        *
+# DECODE: 0x000006dc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 30875000
+# debugasm 000006e0 0000xxxx        *
+# DECODE: 0x000006e0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 30945000
+# debugasm 000006e4 0000xxxx        *
+# DECODE: 0x000006e4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 31015000
+# debugasm 000006e8 0000xxxx        *
+# DECODE: 0x000006e8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 31085000
+# debugasm 000006ec 0000xxxx        *
+# DECODE: 0x000006ec     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 31155000
+# debugasm 000006f0 0000xxxx        *
+# DECODE: 0x000006f0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 31225000
+# debugasm 000006f4 0000xxxx        *
+# DECODE: 0x000006f4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 31295000
+# debugasm 000006f8 0000xxxx        *
+# DECODE: 0x000006f8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 31365000
+# debugasm 000006fc 0000xxxx        *
+# DECODE: 0x000006fc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 31435000
+# debugasm 00000700 0000xxxx        *
+# DECODE: 0x00000700     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 31505000
+# debugasm 00000704 0000xxxx        *
+# DECODE: 0x00000704     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 31575000
+# debugasm 00000708 0000xxxx        *
+# DECODE: 0x00000708     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 31645000
+# debugasm 0000070c 0000xxxx        *
+# DECODE: 0x0000070c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 31715000
+# debugasm 00000710 0000xxxx        *
+# DECODE: 0x00000710     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 31785000
+# debugasm 00000714 0000xxxx        *
+# DECODE: 0x00000714     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 31855000
+# debugasm 00000718 0000xxxx        *
+# DECODE: 0x00000718     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 31925000
+# debugasm 0000071c 0000xxxx        *
+# DECODE: 0x0000071c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 31995000
+# debugasm 00000720 0000xxxx        *
+# DECODE: 0x00000720     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 32065000
+# debugasm 00000724 0000xxxx        *
+# DECODE: 0x00000724     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 32135000
+# debugasm 00000728 0000xxxx        *
+# DECODE: 0x00000728     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 32205000
+# debugasm 0000072c 0000xxxx        *
+# DECODE: 0x0000072c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 32275000
+# debugasm 00000730 0000xxxx        *
+# DECODE: 0x00000730     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 32345000
+# debugasm 00000734 0000xxxx        *
+# DECODE: 0x00000734     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 32415000
+# debugasm 00000738 0000xxxx        *
+# DECODE: 0x00000738     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 32485000
+# debugasm 0000073c 0000xxxx        *
+# DECODE: 0x0000073c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 32555000
+# debugasm 00000740 0000xxxx        *
+# DECODE: 0x00000740     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 32625000
+# debugasm 00000744 0000xxxx        *
+# DECODE: 0x00000744     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 32695000
+# debugasm 00000748 0000xxxx        *
+# DECODE: 0x00000748     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 32765000
+# debugasm 0000074c 0000xxxx        *
+# DECODE: 0x0000074c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 32835000
+# debugasm 00000750 0000xxxx        *
+# DECODE: 0x00000750     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 32905000
+# debugasm 00000754 0000xxxx        *
+# DECODE: 0x00000754     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 32975000
+# debugasm 00000758 0000xxxx        *
+# DECODE: 0x00000758     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 33045000
+# debugasm 0000075c 0000xxxx        *
+# DECODE: 0x0000075c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 33115000
+# debugasm 00000760 0000xxxx        *
+# DECODE: 0x00000760     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 33185000
+# debugasm 00000764 0000xxxx        *
+# DECODE: 0x00000764     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 33255000
+# debugasm 00000768 0000xxxx        *
+# DECODE: 0x00000768     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 33325000
+# debugasm 0000076c 0000xxxx        *
+# DECODE: 0x0000076c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 33395000
+# debugasm 00000770 0000xxxx        *
+# DECODE: 0x00000770     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 33465000
+# debugasm 00000774 0000xxxx        *
+# DECODE: 0x00000774     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 33535000
+# debugasm 00000778 0000xxxx        *
+# DECODE: 0x00000778     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 33605000
+# debugasm 0000077c 0000xxxx        *
+# DECODE: 0x0000077c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 33675000
+# debugasm 00000780 0000xxxx        *
+# DECODE: 0x00000780     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 33745000
+# debugasm 00000784 0000xxxx        *
+# DECODE: 0x00000784     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 33815000
+# debugasm 00000788 0000xxxx        *
+# DECODE: 0x00000788     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 33885000
+# debugasm 0000078c 0000xxxx        *
+# DECODE: 0x0000078c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 33955000
+# debugasm 00000790 0000xxxx        *
+# DECODE: 0x00000790     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 34025000
+# debugasm 00000794 0000xxxx        *
+# DECODE: 0x00000794     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 34095000
+# debugasm 00000798 0000xxxx        *
+# DECODE: 0x00000798     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 34165000
+# debugasm 0000079c 0000xxxx        *
+# DECODE: 0x0000079c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 34235000
+# debugasm 000007a0 0000xxxx        *
+# DECODE: 0x000007a0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 34305000
+# debugasm 000007a4 0000xxxx        *
+# DECODE: 0x000007a4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 34375000
+# debugasm 000007a8 0000xxxx        *
+# DECODE: 0x000007a8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 34445000
+# debugasm 000007ac 0000xxxx        *
+# DECODE: 0x000007ac     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 34515000
+# debugasm 000007b0 0000xxxx        *
+# DECODE: 0x000007b0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 34585000
+# debugasm 000007b4 0000xxxx        *
+# DECODE: 0x000007b4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 34655000
+# debugasm 000007b8 0000xxxx        *
+# DECODE: 0x000007b8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 34725000
+# debugasm 000007bc 0000xxxx        *
+# DECODE: 0x000007bc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 34795000
+# debugasm 000007c0 0000xxxx        *
+# DECODE: 0x000007c0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 34865000
+# debugasm 000007c4 0000xxxx        *
+# DECODE: 0x000007c4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 34935000
+# debugasm 000007c8 0000xxxx        *
+# DECODE: 0x000007c8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 35005000
+# debugasm 000007cc 0000xxxx        *
+# DECODE: 0x000007cc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 35075000
+# debugasm 000007d0 0000xxxx        *
+# DECODE: 0x000007d0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 35145000
+# debugasm 000007d4 0000xxxx        *
+# DECODE: 0x000007d4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 35215000
+# debugasm 000007d8 0000xxxx        *
+# DECODE: 0x000007d8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 35285000
+# debugasm 000007dc 0000xxxx        *
+# DECODE: 0x000007dc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 35355000
+# debugasm 000007e0 0000xxxx        *
+# DECODE: 0x000007e0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 35425000
+# debugasm 000007e4 0000xxxx        *
+# DECODE: 0x000007e4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 35495000
+# debugasm 000007e8 0000xxxx        *
+# DECODE: 0x000007e8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 35565000
+# debugasm 000007ec 0000xxxx        *
+# DECODE: 0x000007ec     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 35635000
+# debugasm 000007f0 0000xxxx        *
+# DECODE: 0x000007f0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 35705000
+# debugasm 000007f4 0000xxxx        *
+# DECODE: 0x000007f4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 35775000
+# debugasm 000007f8 0000xxxx        *
+# DECODE: 0x000007f8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 35845000
+# debugasm 000007fc 0000xxxx        *
+# DECODE: 0x000007fc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 35915000
+# debugasm 00000800 0000xxxx        *
+# DECODE: 0x00000800     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 35985000
+# debugasm 00000804 0000xxxx        *
+# DECODE: 0x00000804     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 36055000
+# debugasm 00000808 0000xxxx        *
+# DECODE: 0x00000808     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 36125000
+# debugasm 0000080c 0000xxxx        *
+# DECODE: 0x0000080c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 36195000
+# debugasm 00000810 0000xxxx        *
+# DECODE: 0x00000810     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 36265000
+# debugasm 00000814 0000xxxx        *
+# DECODE: 0x00000814     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 36335000
+# debugasm 00000818 0000xxxx        *
+# DECODE: 0x00000818     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 36405000
+# debugasm 0000081c 0000xxxx        *
+# DECODE: 0x0000081c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 36475000
+# debugasm 00000820 0000xxxx        *
+# DECODE: 0x00000820     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 36545000
+# debugasm 00000824 0000xxxx        *
+# DECODE: 0x00000824     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 36615000
+# debugasm 00000828 0000xxxx        *
+# DECODE: 0x00000828     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 36685000
+# debugasm 0000082c 0000xxxx        *
+# DECODE: 0x0000082c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 36755000
+# debugasm 00000830 0000xxxx        *
+# DECODE: 0x00000830     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 36825000
+# debugasm 00000834 0000xxxx        *
+# DECODE: 0x00000834     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 36895000
+# debugasm 00000838 0000xxxx        *
+# DECODE: 0x00000838     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 36965000
+# debugasm 0000083c 0000xxxx        *
+# DECODE: 0x0000083c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 37035000
+# debugasm 00000840 0000xxxx        *
+# DECODE: 0x00000840     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 37105000
+# debugasm 00000844 0000xxxx        *
+# DECODE: 0x00000844     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 37175000
+# debugasm 00000848 0000xxxx        *
+# DECODE: 0x00000848     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 37245000
+# debugasm 0000084c 0000xxxx        *
+# DECODE: 0x0000084c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 37315000
+# debugasm 00000850 0000xxxx        *
+# DECODE: 0x00000850     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 37385000
+# debugasm 00000854 0000xxxx        *
+# DECODE: 0x00000854     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 37455000
+# debugasm 00000858 0000xxxx        *
+# DECODE: 0x00000858     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 37525000
+# debugasm 0000085c 0000xxxx        *
+# DECODE: 0x0000085c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 37595000
+# debugasm 00000860 0000xxxx        *
+# DECODE: 0x00000860     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 37665000
+# debugasm 00000864 0000xxxx        *
+# DECODE: 0x00000864     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 37735000
+# debugasm 00000868 0000xxxx        *
+# DECODE: 0x00000868     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 37805000
+# debugasm 0000086c 0000xxxx        *
+# DECODE: 0x0000086c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 37875000
+# debugasm 00000870 0000xxxx        *
+# DECODE: 0x00000870     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 37945000
+# debugasm 00000874 0000xxxx        *
+# DECODE: 0x00000874     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 38015000
+# debugasm 00000878 0000xxxx        *
+# DECODE: 0x00000878     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 38085000
+# debugasm 0000087c 0000xxxx        *
+# DECODE: 0x0000087c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 38155000
+# debugasm 00000880 0000xxxx        *
+# DECODE: 0x00000880     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 38225000
+# debugasm 00000884 0000xxxx        *
+# DECODE: 0x00000884     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 38295000
+# debugasm 00000888 0000xxxx        *
+# DECODE: 0x00000888     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 38365000
+# debugasm 0000088c 0000xxxx        *
+# DECODE: 0x0000088c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 38435000
+# debugasm 00000890 0000xxxx        *
+# DECODE: 0x00000890     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 38505000
+# debugasm 00000894 0000xxxx        *
+# DECODE: 0x00000894     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 38575000
+# debugasm 00000898 0000xxxx        *
+# DECODE: 0x00000898     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 38645000
+# debugasm 0000089c 0000xxxx        *
+# DECODE: 0x0000089c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 38715000
+# debugasm 000008a0 0000xxxx        *
+# DECODE: 0x000008a0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 38785000
+# debugasm 000008a4 0000xxxx        *
+# DECODE: 0x000008a4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 38855000
+# debugasm 000008a8 0000xxxx        *
+# DECODE: 0x000008a8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 38925000
+# debugasm 000008ac 0000xxxx        *
+# DECODE: 0x000008ac     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 38995000
+# debugasm 000008b0 0000xxxx        *
+# DECODE: 0x000008b0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 39065000
+# debugasm 000008b4 0000xxxx        *
+# DECODE: 0x000008b4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 39135000
+# debugasm 000008b8 0000xxxx        *
+# DECODE: 0x000008b8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 39205000
+# debugasm 000008bc 0000xxxx        *
+# DECODE: 0x000008bc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 39275000
+# debugasm 000008c0 0000xxxx        *
+# DECODE: 0x000008c0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 39345000
+# debugasm 000008c4 0000xxxx        *
+# DECODE: 0x000008c4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 39415000
+# debugasm 000008c8 0000xxxx        *
+# DECODE: 0x000008c8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 39485000
+# debugasm 000008cc 0000xxxx        *
+# DECODE: 0x000008cc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 39555000
+# debugasm 000008d0 0000xxxx        *
+# DECODE: 0x000008d0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 39625000
+# debugasm 000008d4 0000xxxx        *
+# DECODE: 0x000008d4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 39695000
+# debugasm 000008d8 0000xxxx        *
+# DECODE: 0x000008d8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 39765000
+# debugasm 000008dc 0000xxxx        *
+# DECODE: 0x000008dc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 39835000
+# debugasm 000008e0 0000xxxx        *
+# DECODE: 0x000008e0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 39905000
+# debugasm 000008e4 0000xxxx        *
+# DECODE: 0x000008e4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 39975000
+# debugasm 000008e8 0000xxxx        *
+# DECODE: 0x000008e8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 40045000
+# debugasm 000008ec 0000xxxx        *
+# DECODE: 0x000008ec     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 40115000
+# debugasm 000008f0 0000xxxx        *
+# DECODE: 0x000008f0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 40185000
+# debugasm 000008f4 0000xxxx        *
+# DECODE: 0x000008f4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 40255000
+# debugasm 000008f8 0000xxxx        *
+# DECODE: 0x000008f8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 40325000
+# debugasm 000008fc 0000xxxx        *
+# DECODE: 0x000008fc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 40395000
+# debugasm 00000900 0000xxxx        *
+# DECODE: 0x00000900     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 40465000
+# debugasm 00000904 0000xxxx        *
+# DECODE: 0x00000904     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 40535000
+# debugasm 00000908 0000xxxx        *
+# DECODE: 0x00000908     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 40605000
+# debugasm 0000090c 0000xxxx        *
+# DECODE: 0x0000090c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 40675000
+# debugasm 00000910 0000xxxx        *
+# DECODE: 0x00000910     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 40745000
+# debugasm 00000914 0000xxxx        *
+# DECODE: 0x00000914     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 40815000
+# debugasm 00000918 0000xxxx        *
+# DECODE: 0x00000918     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 40885000
+# debugasm 0000091c 0000xxxx        *
+# DECODE: 0x0000091c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 40955000
+# debugasm 00000920 0000xxxx        *
+# DECODE: 0x00000920     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 41025000
+# debugasm 00000924 0000xxxx        *
+# DECODE: 0x00000924     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 41095000
+# debugasm 00000928 0000xxxx        *
+# DECODE: 0x00000928     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 41165000
+# debugasm 0000092c 0000xxxx        *
+# DECODE: 0x0000092c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 41235000
+# debugasm 00000930 0000xxxx        *
+# DECODE: 0x00000930     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 41305000
+# debugasm 00000934 0000xxxx        *
+# DECODE: 0x00000934     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 41375000
+# debugasm 00000938 0000xxxx        *
+# DECODE: 0x00000938     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 41445000
+# debugasm 0000093c 0000xxxx        *
+# DECODE: 0x0000093c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 41515000
+# debugasm 00000940 0000xxxx        *
+# DECODE: 0x00000940     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 41585000
+# debugasm 00000944 0000xxxx        *
+# DECODE: 0x00000944     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 41655000
+# debugasm 00000948 0000xxxx        *
+# DECODE: 0x00000948     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 41725000
+# debugasm 0000094c 0000xxxx        *
+# DECODE: 0x0000094c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 41795000
+# debugasm 00000950 0000xxxx        *
+# DECODE: 0x00000950     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 41865000
+# debugasm 00000954 0000xxxx        *
+# DECODE: 0x00000954     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 41935000
+# debugasm 00000958 0000xxxx        *
+# DECODE: 0x00000958     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 42005000
+# debugasm 0000095c 0000xxxx        *
+# DECODE: 0x0000095c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 42075000
+# debugasm 00000960 0000xxxx        *
+# DECODE: 0x00000960     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 42145000
+# debugasm 00000964 0000xxxx        *
+# DECODE: 0x00000964     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 42215000
+# debugasm 00000968 0000xxxx        *
+# DECODE: 0x00000968     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 42285000
+# debugasm 0000096c 0000xxxx        *
+# DECODE: 0x0000096c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 42355000
+# debugasm 00000970 0000xxxx        *
+# DECODE: 0x00000970     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 42425000
+# debugasm 00000974 0000xxxx        *
+# DECODE: 0x00000974     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 42495000
+# debugasm 00000978 0000xxxx        *
+# DECODE: 0x00000978     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 42565000
+# debugasm 0000097c 0000xxxx        *
+# DECODE: 0x0000097c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 42635000
+# debugasm 00000980 0000xxxx        *
+# DECODE: 0x00000980     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 42705000
+# debugasm 00000984 0000xxxx        *
+# DECODE: 0x00000984     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 42775000
+# debugasm 00000988 0000xxxx        *
+# DECODE: 0x00000988     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 42845000
+# debugasm 0000098c 0000xxxx        *
+# DECODE: 0x0000098c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 42915000
+# debugasm 00000990 0000xxxx        *
+# DECODE: 0x00000990     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 42985000
+# debugasm 00000994 0000xxxx        *
+# DECODE: 0x00000994     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 43055000
+# debugasm 00000998 0000xxxx        *
+# DECODE: 0x00000998     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 43125000
+# debugasm 0000099c 0000xxxx        *
+# DECODE: 0x0000099c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 43195000
+# debugasm 000009a0 0000xxxx        *
+# DECODE: 0x000009a0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 43265000
+# debugasm 000009a4 0000xxxx        *
+# DECODE: 0x000009a4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 43335000
+# debugasm 000009a8 0000xxxx        *
+# DECODE: 0x000009a8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 43405000
+# debugasm 000009ac 0000xxxx        *
+# DECODE: 0x000009ac     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 43475000
+# debugasm 000009b0 0000xxxx        *
+# DECODE: 0x000009b0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 43545000
+# debugasm 000009b4 0000xxxx        *
+# DECODE: 0x000009b4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 43615000
+# debugasm 000009b8 0000xxxx        *
+# DECODE: 0x000009b8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 43685000
+# debugasm 000009bc 0000xxxx        *
+# DECODE: 0x000009bc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 43755000
+# debugasm 000009c0 0000xxxx        *
+# DECODE: 0x000009c0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 43825000
+# debugasm 000009c4 0000xxxx        *
+# DECODE: 0x000009c4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 43895000
+# debugasm 000009c8 0000xxxx        *
+# DECODE: 0x000009c8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 43965000
+# debugasm 000009cc 0000xxxx        *
+# DECODE: 0x000009cc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 44035000
+# debugasm 000009d0 0000xxxx        *
+# DECODE: 0x000009d0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 44105000
+# debugasm 000009d4 0000xxxx        *
+# DECODE: 0x000009d4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 44175000
+# debugasm 000009d8 0000xxxx        *
+# DECODE: 0x000009d8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 44245000
+# debugasm 000009dc 0000xxxx        *
+# DECODE: 0x000009dc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 44315000
+# debugasm 000009e0 0000xxxx        *
+# DECODE: 0x000009e0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 44385000
+# debugasm 000009e4 0000xxxx        *
+# DECODE: 0x000009e4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 44455000
+# debugasm 000009e8 0000xxxx        *
+# DECODE: 0x000009e8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 44525000
+# debugasm 000009ec 0000xxxx        *
+# DECODE: 0x000009ec     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 44595000
+# debugasm 000009f0 0000xxxx        *
+# DECODE: 0x000009f0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 44665000
+# debugasm 000009f4 0000xxxx        *
+# DECODE: 0x000009f4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 44735000
+# debugasm 000009f8 0000xxxx        *
+# DECODE: 0x000009f8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 44805000
+# debugasm 000009fc 0000xxxx        *
+# DECODE: 0x000009fc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 44875000
+# debugasm 00000a00 0000xxxx        *
+# DECODE: 0x00000a00     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 44945000
+# debugasm 00000a04 0000xxxx        *
+# DECODE: 0x00000a04     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 45015000
+# debugasm 00000a08 0000xxxx        *
+# DECODE: 0x00000a08     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 45085000
+# debugasm 00000a0c 0000xxxx        *
+# DECODE: 0x00000a0c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 45155000
+# debugasm 00000a10 0000xxxx        *
+# DECODE: 0x00000a10     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 45225000
+# debugasm 00000a14 0000xxxx        *
+# DECODE: 0x00000a14     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 45295000
+# debugasm 00000a18 0000xxxx        *
+# DECODE: 0x00000a18     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 45365000
+# debugasm 00000a1c 0000xxxx        *
+# DECODE: 0x00000a1c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 45435000
+# debugasm 00000a20 0000xxxx        *
+# DECODE: 0x00000a20     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 45505000
+# debugasm 00000a24 0000xxxx        *
+# DECODE: 0x00000a24     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 45575000
+# debugasm 00000a28 0000xxxx        *
+# DECODE: 0x00000a28     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 45645000
+# debugasm 00000a2c 0000xxxx        *
+# DECODE: 0x00000a2c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 45715000
+# debugasm 00000a30 0000xxxx        *
+# DECODE: 0x00000a30     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 45785000
+# debugasm 00000a34 0000xxxx        *
+# DECODE: 0x00000a34     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 45855000
+# debugasm 00000a38 0000xxxx        *
+# DECODE: 0x00000a38     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 45925000
+# debugasm 00000a3c 0000xxxx        *
+# DECODE: 0x00000a3c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 45995000
+# debugasm 00000a40 0000xxxx        *
+# DECODE: 0x00000a40     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 46065000
+# debugasm 00000a44 0000xxxx        *
+# DECODE: 0x00000a44     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 46135000
+# debugasm 00000a48 0000xxxx        *
+# DECODE: 0x00000a48     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 46205000
+# debugasm 00000a4c 0000xxxx        *
+# DECODE: 0x00000a4c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 46275000
+# debugasm 00000a50 0000xxxx        *
+# DECODE: 0x00000a50     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 46345000
+# debugasm 00000a54 0000xxxx        *
+# DECODE: 0x00000a54     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 46415000
+# debugasm 00000a58 0000xxxx        *
+# DECODE: 0x00000a58     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 46485000
+# debugasm 00000a5c 0000xxxx        *
+# DECODE: 0x00000a5c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 46555000
+# debugasm 00000a60 0000xxxx        *
+# DECODE: 0x00000a60     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 46625000
+# debugasm 00000a64 0000xxxx        *
+# DECODE: 0x00000a64     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 46695000
+# debugasm 00000a68 0000xxxx        *
+# DECODE: 0x00000a68     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 46765000
+# debugasm 00000a6c 0000xxxx        *
+# DECODE: 0x00000a6c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 46835000
+# debugasm 00000a70 0000xxxx        *
+# DECODE: 0x00000a70     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 46905000
+# debugasm 00000a74 0000xxxx        *
+# DECODE: 0x00000a74     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 46975000
+# debugasm 00000a78 0000xxxx        *
+# DECODE: 0x00000a78     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 47045000
+# debugasm 00000a7c 0000xxxx        *
+# DECODE: 0x00000a7c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 47115000
+# debugasm 00000a80 0000xxxx        *
+# DECODE: 0x00000a80     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 47185000
+# debugasm 00000a84 0000xxxx        *
+# DECODE: 0x00000a84     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 47255000
+# debugasm 00000a88 0000xxxx        *
+# DECODE: 0x00000a88     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 47325000
+# debugasm 00000a8c 0000xxxx        *
+# DECODE: 0x00000a8c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 47395000
+# debugasm 00000a90 0000xxxx        *
+# DECODE: 0x00000a90     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 47465000
+# debugasm 00000a94 0000xxxx        *
+# DECODE: 0x00000a94     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 47535000
+# debugasm 00000a98 0000xxxx        *
+# DECODE: 0x00000a98     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 47605000
+# debugasm 00000a9c 0000xxxx        *
+# DECODE: 0x00000a9c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 47675000
+# debugasm 00000aa0 0000xxxx        *
+# DECODE: 0x00000aa0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 47745000
+# debugasm 00000aa4 0000xxxx        *
+# DECODE: 0x00000aa4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 47815000
+# debugasm 00000aa8 0000xxxx        *
+# DECODE: 0x00000aa8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 47885000
+# debugasm 00000aac 0000xxxx        *
+# DECODE: 0x00000aac     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 47955000
+# debugasm 00000ab0 0000xxxx        *
+# DECODE: 0x00000ab0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 48025000
+# debugasm 00000ab4 0000xxxx        *
+# DECODE: 0x00000ab4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 48095000
+# debugasm 00000ab8 0000xxxx        *
+# DECODE: 0x00000ab8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 48165000
+# debugasm 00000abc 0000xxxx        *
+# DECODE: 0x00000abc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 48235000
+# debugasm 00000ac0 0000xxxx        *
+# DECODE: 0x00000ac0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 48305000
+# debugasm 00000ac4 0000xxxx        *
+# DECODE: 0x00000ac4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 48375000
+# debugasm 00000ac8 0000xxxx        *
+# DECODE: 0x00000ac8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 48445000
+# debugasm 00000acc 0000xxxx        *
+# DECODE: 0x00000acc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 48515000
+# debugasm 00000ad0 0000xxxx        *
+# DECODE: 0x00000ad0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 48585000
+# debugasm 00000ad4 0000xxxx        *
+# DECODE: 0x00000ad4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 48655000
+# debugasm 00000ad8 0000xxxx        *
+# DECODE: 0x00000ad8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 48725000
+# debugasm 00000adc 0000xxxx        *
+# DECODE: 0x00000adc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 48795000
+# debugasm 00000ae0 0000xxxx        *
+# DECODE: 0x00000ae0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 48865000
+# debugasm 00000ae4 0000xxxx        *
+# DECODE: 0x00000ae4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 48935000
+# debugasm 00000ae8 0000xxxx        *
+# DECODE: 0x00000ae8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 49005000
+# debugasm 00000aec 0000xxxx        *
+# DECODE: 0x00000aec     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 49075000
+# debugasm 00000af0 0000xxxx        *
+# DECODE: 0x00000af0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 49145000
+# debugasm 00000af4 0000xxxx        *
+# DECODE: 0x00000af4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 49215000
+# debugasm 00000af8 0000xxxx        *
+# DECODE: 0x00000af8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 49285000
+# debugasm 00000afc 0000xxxx        *
+# DECODE: 0x00000afc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 49355000
+# debugasm 00000b00 0000xxxx        *
+# DECODE: 0x00000b00     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 49425000
+# debugasm 00000b04 0000xxxx        *
+# DECODE: 0x00000b04     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 49495000
+# debugasm 00000b08 0000xxxx        *
+# DECODE: 0x00000b08     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 49565000
+# debugasm 00000b0c 0000xxxx        *
+# DECODE: 0x00000b0c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 49635000
+# debugasm 00000b10 0000xxxx        *
+# DECODE: 0x00000b10     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 49705000
+# debugasm 00000b14 0000xxxx        *
+# DECODE: 0x00000b14     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 49775000
+# debugasm 00000b18 0000xxxx        *
+# DECODE: 0x00000b18     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 49845000
+# debugasm 00000b1c 0000xxxx        *
+# DECODE: 0x00000b1c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 49915000
+# debugasm 00000b20 0000xxxx        *
+# DECODE: 0x00000b20     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 49985000
+# debugasm 00000b24 0000xxxx        *
+# DECODE: 0x00000b24     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 50055000
+# debugasm 00000b28 0000xxxx        *
+# DECODE: 0x00000b28     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 50125000
+# debugasm 00000b2c 0000xxxx        *
+# DECODE: 0x00000b2c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 50195000
+# debugasm 00000b30 0000xxxx        *
+# DECODE: 0x00000b30     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 50265000
+# debugasm 00000b34 0000xxxx        *
+# DECODE: 0x00000b34     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 50335000
+# debugasm 00000b38 0000xxxx        *
+# DECODE: 0x00000b38     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 50405000
+# debugasm 00000b3c 0000xxxx        *
+# DECODE: 0x00000b3c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 50475000
+# debugasm 00000b40 0000xxxx        *
+# DECODE: 0x00000b40     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 50545000
+# debugasm 00000b44 0000xxxx        *
+# DECODE: 0x00000b44     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 50615000
+# debugasm 00000b48 0000xxxx        *
+# DECODE: 0x00000b48     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 50685000
+# debugasm 00000b4c 0000xxxx        *
+# DECODE: 0x00000b4c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 50755000
+# debugasm 00000b50 0000xxxx        *
+# DECODE: 0x00000b50     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 50825000
+# debugasm 00000b54 0000xxxx        *
+# DECODE: 0x00000b54     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 50895000
+# debugasm 00000b58 0000xxxx        *
+# DECODE: 0x00000b58     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 50965000
+# debugasm 00000b5c 0000xxxx        *
+# DECODE: 0x00000b5c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 51035000
+# debugasm 00000b60 0000xxxx        *
+# DECODE: 0x00000b60     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 51105000
+# debugasm 00000b64 0000xxxx        *
+# DECODE: 0x00000b64     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 51175000
+# debugasm 00000b68 0000xxxx        *
+# DECODE: 0x00000b68     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 51245000
+# debugasm 00000b6c 0000xxxx        *
+# DECODE: 0x00000b6c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 51315000
+# debugasm 00000b70 0000xxxx        *
+# DECODE: 0x00000b70     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 51385000
+# debugasm 00000b74 0000xxxx        *
+# DECODE: 0x00000b74     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 51455000
+# debugasm 00000b78 0000xxxx        *
+# DECODE: 0x00000b78     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 51525000
+# debugasm 00000b7c 0000xxxx        *
+# DECODE: 0x00000b7c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 51595000
+# debugasm 00000b80 0000xxxx        *
+# DECODE: 0x00000b80     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 51665000
+# debugasm 00000b84 0000xxxx        *
+# DECODE: 0x00000b84     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 51735000
+# debugasm 00000b88 0000xxxx        *
+# DECODE: 0x00000b88     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 51805000
+# debugasm 00000b8c 0000xxxx        *
+# DECODE: 0x00000b8c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 51875000
+# debugasm 00000b90 0000xxxx        *
+# DECODE: 0x00000b90     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 51945000
+# debugasm 00000b94 0000xxxx        *
+# DECODE: 0x00000b94     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 52015000
+# debugasm 00000b98 0000xxxx        *
+# DECODE: 0x00000b98     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 52085000
+# debugasm 00000b9c 0000xxxx        *
+# DECODE: 0x00000b9c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 52155000
+# debugasm 00000ba0 0000xxxx        *
+# DECODE: 0x00000ba0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 52225000
+# debugasm 00000ba4 0000xxxx        *
+# DECODE: 0x00000ba4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 52295000
+# debugasm 00000ba8 0000xxxx        *
+# DECODE: 0x00000ba8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 52365000
+# debugasm 00000bac 0000xxxx        *
+# DECODE: 0x00000bac     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 52435000
+# debugasm 00000bb0 0000xxxx        *
+# DECODE: 0x00000bb0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 52505000
+# debugasm 00000bb4 0000xxxx        *
+# DECODE: 0x00000bb4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 52575000
+# debugasm 00000bb8 0000xxxx        *
+# DECODE: 0x00000bb8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 52645000
+# debugasm 00000bbc 0000xxxx        *
+# DECODE: 0x00000bbc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 52715000
+# debugasm 00000bc0 0000xxxx        *
+# DECODE: 0x00000bc0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 52785000
+# debugasm 00000bc4 0000xxxx        *
+# DECODE: 0x00000bc4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 52855000
+# debugasm 00000bc8 0000xxxx        *
+# DECODE: 0x00000bc8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 52925000
+# debugasm 00000bcc 0000xxxx        *
+# DECODE: 0x00000bcc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 52995000
+# debugasm 00000bd0 0000xxxx        *
+# DECODE: 0x00000bd0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 53065000
+# debugasm 00000bd4 0000xxxx        *
+# DECODE: 0x00000bd4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 53135000
+# debugasm 00000bd8 0000xxxx        *
+# DECODE: 0x00000bd8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 53205000
+# debugasm 00000bdc 0000xxxx        *
+# DECODE: 0x00000bdc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 53275000
+# debugasm 00000be0 0000xxxx        *
+# DECODE: 0x00000be0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 53345000
+# debugasm 00000be4 0000xxxx        *
+# DECODE: 0x00000be4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 53415000
+# debugasm 00000be8 0000xxxx        *
+# DECODE: 0x00000be8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 53485000
+# debugasm 00000bec 0000xxxx        *
+# DECODE: 0x00000bec     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 53555000
+# debugasm 00000bf0 0000xxxx        *
+# DECODE: 0x00000bf0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 53625000
+# debugasm 00000bf4 0000xxxx        *
+# DECODE: 0x00000bf4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 53695000
+# debugasm 00000bf8 0000xxxx        *
+# DECODE: 0x00000bf8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 53765000
+# debugasm 00000bfc 0000xxxx        *
+# DECODE: 0x00000bfc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 53835000
+# debugasm 00000c00 0000xxxx        *
+# DECODE: 0x00000c00     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 53905000
+# debugasm 00000c04 0000xxxx        *
+# DECODE: 0x00000c04     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 53975000
+# debugasm 00000c08 0000xxxx        *
+# DECODE: 0x00000c08     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 54045000
+# debugasm 00000c0c 0000xxxx        *
+# DECODE: 0x00000c0c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 54115000
+# debugasm 00000c10 0000xxxx        *
+# DECODE: 0x00000c10     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 54185000
+# debugasm 00000c14 0000xxxx        *
+# DECODE: 0x00000c14     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 54255000
+# debugasm 00000c18 0000xxxx        *
+# DECODE: 0x00000c18     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 54325000
+# debugasm 00000c1c 0000xxxx        *
+# DECODE: 0x00000c1c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 54395000
+# debugasm 00000c20 0000xxxx        *
+# DECODE: 0x00000c20     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 54465000
+# debugasm 00000c24 0000xxxx        *
+# DECODE: 0x00000c24     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 54535000
+# debugasm 00000c28 0000xxxx        *
+# DECODE: 0x00000c28     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 54605000
+# debugasm 00000c2c 0000xxxx        *
+# DECODE: 0x00000c2c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 54675000
+# debugasm 00000c30 0000xxxx        *
+# DECODE: 0x00000c30     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 54745000
+# debugasm 00000c34 0000xxxx        *
+# DECODE: 0x00000c34     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 54815000
+# debugasm 00000c38 0000xxxx        *
+# DECODE: 0x00000c38     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 54885000
+# debugasm 00000c3c 0000xxxx        *
+# DECODE: 0x00000c3c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 54955000
+# debugasm 00000c40 0000xxxx        *
+# DECODE: 0x00000c40     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 55025000
+# debugasm 00000c44 0000xxxx        *
+# DECODE: 0x00000c44     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 55095000
+# debugasm 00000c48 0000xxxx        *
+# DECODE: 0x00000c48     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 55165000
+# debugasm 00000c4c 0000xxxx        *
+# DECODE: 0x00000c4c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 55235000
+# debugasm 00000c50 0000xxxx        *
+# DECODE: 0x00000c50     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 55305000
+# debugasm 00000c54 0000xxxx        *
+# DECODE: 0x00000c54     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 55375000
+# debugasm 00000c58 0000xxxx        *
+# DECODE: 0x00000c58     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 55445000
+# debugasm 00000c5c 0000xxxx        *
+# DECODE: 0x00000c5c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 55515000
+# debugasm 00000c60 0000xxxx        *
+# DECODE: 0x00000c60     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 55585000
+# debugasm 00000c64 0000xxxx        *
+# DECODE: 0x00000c64     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 55655000
+# debugasm 00000c68 0000xxxx        *
+# DECODE: 0x00000c68     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 55725000
+# debugasm 00000c6c 0000xxxx        *
+# DECODE: 0x00000c6c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 55795000
+# debugasm 00000c70 0000xxxx        *
+# DECODE: 0x00000c70     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 55865000
+# debugasm 00000c74 0000xxxx        *
+# DECODE: 0x00000c74     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 55935000
+# debugasm 00000c78 0000xxxx        *
+# DECODE: 0x00000c78     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 56005000
+# debugasm 00000c7c 0000xxxx        *
+# DECODE: 0x00000c7c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 56075000
+# debugasm 00000c80 0000xxxx        *
+# DECODE: 0x00000c80     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 56145000
+# debugasm 00000c84 0000xxxx        *
+# DECODE: 0x00000c84     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 56215000
+# debugasm 00000c88 0000xxxx        *
+# DECODE: 0x00000c88     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 56285000
+# debugasm 00000c8c 0000xxxx        *
+# DECODE: 0x00000c8c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 56355000
+# debugasm 00000c90 0000xxxx        *
+# DECODE: 0x00000c90     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 56425000
+# debugasm 00000c94 0000xxxx        *
+# DECODE: 0x00000c94     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 56495000
+# debugasm 00000c98 0000xxxx        *
+# DECODE: 0x00000c98     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 56565000
+# debugasm 00000c9c 0000xxxx        *
+# DECODE: 0x00000c9c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 56635000
+# debugasm 00000ca0 0000xxxx        *
+# DECODE: 0x00000ca0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 56705000
+# debugasm 00000ca4 0000xxxx        *
+# DECODE: 0x00000ca4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 56775000
+# debugasm 00000ca8 0000xxxx        *
+# DECODE: 0x00000ca8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 56845000
+# debugasm 00000cac 0000xxxx        *
+# DECODE: 0x00000cac     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 56915000
+# debugasm 00000cb0 0000xxxx        *
+# DECODE: 0x00000cb0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 56985000
+# debugasm 00000cb4 0000xxxx        *
+# DECODE: 0x00000cb4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 57055000
+# debugasm 00000cb8 0000xxxx        *
+# DECODE: 0x00000cb8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 57125000
+# debugasm 00000cbc 0000xxxx        *
+# DECODE: 0x00000cbc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 57195000
+# debugasm 00000cc0 0000xxxx        *
+# DECODE: 0x00000cc0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 57265000
+# debugasm 00000cc4 0000xxxx        *
+# DECODE: 0x00000cc4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 57335000
+# debugasm 00000cc8 0000xxxx        *
+# DECODE: 0x00000cc8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 57405000
+# debugasm 00000ccc 0000xxxx        *
+# DECODE: 0x00000ccc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 57475000
+# debugasm 00000cd0 0000xxxx        *
+# DECODE: 0x00000cd0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 57545000
+# debugasm 00000cd4 0000xxxx        *
+# DECODE: 0x00000cd4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 57615000
+# debugasm 00000cd8 0000xxxx        *
+# DECODE: 0x00000cd8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 57685000
+# debugasm 00000cdc 0000xxxx        *
+# DECODE: 0x00000cdc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 57755000
+# debugasm 00000ce0 0000xxxx        *
+# DECODE: 0x00000ce0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 57825000
+# debugasm 00000ce4 0000xxxx        *
+# DECODE: 0x00000ce4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 57895000
+# debugasm 00000ce8 0000xxxx        *
+# DECODE: 0x00000ce8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 57965000
+# debugasm 00000cec 0000xxxx        *
+# DECODE: 0x00000cec     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 58035000
+# debugasm 00000cf0 0000xxxx        *
+# DECODE: 0x00000cf0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 58105000
+# debugasm 00000cf4 0000xxxx        *
+# DECODE: 0x00000cf4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 58175000
+# debugasm 00000cf8 0000xxxx        *
+# DECODE: 0x00000cf8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 58245000
+# debugasm 00000cfc 0000xxxx        *
+# DECODE: 0x00000cfc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 58315000
+# debugasm 00000d00 0000xxxx        *
+# DECODE: 0x00000d00     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 58385000
+# debugasm 00000d04 0000xxxx        *
+# DECODE: 0x00000d04     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 58455000
+# debugasm 00000d08 0000xxxx        *
+# DECODE: 0x00000d08     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 58525000
+# debugasm 00000d0c 0000xxxx        *
+# DECODE: 0x00000d0c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 58595000
+# debugasm 00000d10 0000xxxx        *
+# DECODE: 0x00000d10     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 58665000
+# debugasm 00000d14 0000xxxx        *
+# DECODE: 0x00000d14     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 58735000
+# debugasm 00000d18 0000xxxx        *
+# DECODE: 0x00000d18     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 58805000
+# debugasm 00000d1c 0000xxxx        *
+# DECODE: 0x00000d1c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 58875000
+# debugasm 00000d20 0000xxxx        *
+# DECODE: 0x00000d20     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 58945000
+# debugasm 00000d24 0000xxxx        *
+# DECODE: 0x00000d24     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 59015000
+# debugasm 00000d28 0000xxxx        *
+# DECODE: 0x00000d28     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 59085000
+# debugasm 00000d2c 0000xxxx        *
+# DECODE: 0x00000d2c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 59155000
+# debugasm 00000d30 0000xxxx        *
+# DECODE: 0x00000d30     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 59225000
+# debugasm 00000d34 0000xxxx        *
+# DECODE: 0x00000d34     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 59295000
+# debugasm 00000d38 0000xxxx        *
+# DECODE: 0x00000d38     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 59365000
+# debugasm 00000d3c 0000xxxx        *
+# DECODE: 0x00000d3c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 59435000
+# debugasm 00000d40 0000xxxx        *
+# DECODE: 0x00000d40     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 59505000
+# debugasm 00000d44 0000xxxx        *
+# DECODE: 0x00000d44     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 59575000
+# debugasm 00000d48 0000xxxx        *
+# DECODE: 0x00000d48     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 59645000
+# debugasm 00000d4c 0000xxxx        *
+# DECODE: 0x00000d4c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 59715000
+# debugasm 00000d50 0000xxxx        *
+# DECODE: 0x00000d50     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 59785000
+# debugasm 00000d54 0000xxxx        *
+# DECODE: 0x00000d54     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 59855000
+# debugasm 00000d58 0000xxxx        *
+# DECODE: 0x00000d58     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 59925000
+# debugasm 00000d5c 0000xxxx        *
+# DECODE: 0x00000d5c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 59995000
+# debugasm 00000d60 0000xxxx        *
+# DECODE: 0x00000d60     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 60065000
+# debugasm 00000d64 0000xxxx        *
+# DECODE: 0x00000d64     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 60135000
+# debugasm 00000d68 0000xxxx        *
+# DECODE: 0x00000d68     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 60205000
+# debugasm 00000d6c 0000xxxx        *
+# DECODE: 0x00000d6c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 60275000
+# debugasm 00000d70 0000xxxx        *
+# DECODE: 0x00000d70     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 60345000
+# debugasm 00000d74 0000xxxx        *
+# DECODE: 0x00000d74     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 60415000
+# debugasm 00000d78 0000xxxx        *
+# DECODE: 0x00000d78     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 60485000
+# debugasm 00000d7c 0000xxxx        *
+# DECODE: 0x00000d7c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 60555000
+# debugasm 00000d80 0000xxxx        *
+# DECODE: 0x00000d80     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 60625000
+# debugasm 00000d84 0000xxxx        *
+# DECODE: 0x00000d84     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 60695000
+# debugasm 00000d88 0000xxxx        *
+# DECODE: 0x00000d88     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 60765000
+# debugasm 00000d8c 0000xxxx        *
+# DECODE: 0x00000d8c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 60835000
+# debugasm 00000d90 0000xxxx        *
+# DECODE: 0x00000d90     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 60905000
+# debugasm 00000d94 0000xxxx        *
+# DECODE: 0x00000d94     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 60975000
+# debugasm 00000d98 0000xxxx        *
+# DECODE: 0x00000d98     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 61045000
+# debugasm 00000d9c 0000xxxx        *
+# DECODE: 0x00000d9c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 61115000
+# debugasm 00000da0 0000xxxx        *
+# DECODE: 0x00000da0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 61185000
+# debugasm 00000da4 0000xxxx        *
+# DECODE: 0x00000da4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 61255000
+# debugasm 00000da8 0000xxxx        *
+# DECODE: 0x00000da8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 61325000
+# debugasm 00000dac 0000xxxx        *
+# DECODE: 0x00000dac     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 61395000
+# debugasm 00000db0 0000xxxx        *
+# DECODE: 0x00000db0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 61465000
+# debugasm 00000db4 0000xxxx        *
+# DECODE: 0x00000db4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 61535000
+# debugasm 00000db8 0000xxxx        *
+# DECODE: 0x00000db8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 61605000
+# debugasm 00000dbc 0000xxxx        *
+# DECODE: 0x00000dbc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 61675000
+# debugasm 00000dc0 0000xxxx        *
+# DECODE: 0x00000dc0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 61745000
+# debugasm 00000dc4 0000xxxx        *
+# DECODE: 0x00000dc4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 61815000
+# debugasm 00000dc8 0000xxxx        *
+# DECODE: 0x00000dc8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 61885000
+# debugasm 00000dcc 0000xxxx        *
+# DECODE: 0x00000dcc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 61955000
+# debugasm 00000dd0 0000xxxx        *
+# DECODE: 0x00000dd0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 62025000
+# debugasm 00000dd4 0000xxxx        *
+# DECODE: 0x00000dd4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 62095000
+# debugasm 00000dd8 0000xxxx        *
+# DECODE: 0x00000dd8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 62165000
+# debugasm 00000ddc 0000xxxx        *
+# DECODE: 0x00000ddc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 62235000
+# debugasm 00000de0 0000xxxx        *
+# DECODE: 0x00000de0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 62305000
+# debugasm 00000de4 0000xxxx        *
+# DECODE: 0x00000de4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 62375000
+# debugasm 00000de8 0000xxxx        *
+# DECODE: 0x00000de8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 62445000
+# debugasm 00000dec 0000xxxx        *
+# DECODE: 0x00000dec     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 62515000
+# debugasm 00000df0 0000xxxx        *
+# DECODE: 0x00000df0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 62585000
+# debugasm 00000df4 0000xxxx        *
+# DECODE: 0x00000df4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 62655000
+# debugasm 00000df8 0000xxxx        *
+# DECODE: 0x00000df8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 62725000
+# debugasm 00000dfc 0000xxxx        *
+# DECODE: 0x00000dfc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 62795000
+# debugasm 00000e00 0000xxxx        *
+# DECODE: 0x00000e00     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 62865000
+# debugasm 00000e04 0000xxxx        *
+# DECODE: 0x00000e04     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 62935000
+# debugasm 00000e08 0000xxxx        *
+# DECODE: 0x00000e08     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 63005000
+# debugasm 00000e0c 0000xxxx        *
+# DECODE: 0x00000e0c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 63075000
+# debugasm 00000e10 0000xxxx        *
+# DECODE: 0x00000e10     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 63145000
+# debugasm 00000e14 0000xxxx        *
+# DECODE: 0x00000e14     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 63215000
+# debugasm 00000e18 0000xxxx        *
+# DECODE: 0x00000e18     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 63285000
+# debugasm 00000e1c 0000xxxx        *
+# DECODE: 0x00000e1c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 63355000
+# debugasm 00000e20 0000xxxx        *
+# DECODE: 0x00000e20     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 63425000
+# debugasm 00000e24 0000xxxx        *
+# DECODE: 0x00000e24     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 63495000
+# debugasm 00000e28 0000xxxx        *
+# DECODE: 0x00000e28     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 63565000
+# debugasm 00000e2c 0000xxxx        *
+# DECODE: 0x00000e2c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 63635000
+# debugasm 00000e30 0000xxxx        *
+# DECODE: 0x00000e30     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 63705000
+# debugasm 00000e34 0000xxxx        *
+# DECODE: 0x00000e34     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 63775000
+# debugasm 00000e38 0000xxxx        *
+# DECODE: 0x00000e38     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 63845000
+# debugasm 00000e3c 0000xxxx        *
+# DECODE: 0x00000e3c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 63915000
+# debugasm 00000e40 0000xxxx        *
+# DECODE: 0x00000e40     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 63985000
+# debugasm 00000e44 0000xxxx        *
+# DECODE: 0x00000e44     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 64055000
+# debugasm 00000e48 0000xxxx        *
+# DECODE: 0x00000e48     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 64125000
+# debugasm 00000e4c 0000xxxx        *
+# DECODE: 0x00000e4c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 64195000
+# debugasm 00000e50 0000xxxx        *
+# DECODE: 0x00000e50     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 64265000
+# debugasm 00000e54 0000xxxx        *
+# DECODE: 0x00000e54     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 64335000
+# debugasm 00000e58 0000xxxx        *
+# DECODE: 0x00000e58     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 64405000
+# debugasm 00000e5c 0000xxxx        *
+# DECODE: 0x00000e5c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 64475000
+# debugasm 00000e60 0000xxxx        *
+# DECODE: 0x00000e60     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 64545000
+# debugasm 00000e64 0000xxxx        *
+# DECODE: 0x00000e64     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 64615000
+# debugasm 00000e68 0000xxxx        *
+# DECODE: 0x00000e68     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 64685000
+# debugasm 00000e6c 0000xxxx        *
+# DECODE: 0x00000e6c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 64755000
+# debugasm 00000e70 0000xxxx        *
+# DECODE: 0x00000e70     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 64825000
+# debugasm 00000e74 0000xxxx        *
+# DECODE: 0x00000e74     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 64895000
+# debugasm 00000e78 0000xxxx        *
+# DECODE: 0x00000e78     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 64965000
+# debugasm 00000e7c 0000xxxx        *
+# DECODE: 0x00000e7c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 65035000
+# debugasm 00000e80 0000xxxx        *
+# DECODE: 0x00000e80     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 65105000
+# debugasm 00000e84 0000xxxx        *
+# DECODE: 0x00000e84     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 65175000
+# debugasm 00000e88 0000xxxx        *
+# DECODE: 0x00000e88     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 65245000
+# debugasm 00000e8c 0000xxxx        *
+# DECODE: 0x00000e8c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 65315000
+# debugasm 00000e90 0000xxxx        *
+# DECODE: 0x00000e90     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 65385000
+# debugasm 00000e94 0000xxxx        *
+# DECODE: 0x00000e94     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 65455000
+# debugasm 00000e98 0000xxxx        *
+# DECODE: 0x00000e98     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 65525000
+# debugasm 00000e9c 0000xxxx        *
+# DECODE: 0x00000e9c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 65595000
+# debugasm 00000ea0 0000xxxx        *
+# DECODE: 0x00000ea0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 65665000
+# debugasm 00000ea4 0000xxxx        *
+# DECODE: 0x00000ea4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 65735000
+# debugasm 00000ea8 0000xxxx        *
+# DECODE: 0x00000ea8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 65805000
+# debugasm 00000eac 0000xxxx        *
+# DECODE: 0x00000eac     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 65875000
+# debugasm 00000eb0 0000xxxx        *
+# DECODE: 0x00000eb0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 65945000
+# debugasm 00000eb4 0000xxxx        *
+# DECODE: 0x00000eb4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 66015000
+# debugasm 00000eb8 0000xxxx        *
+# DECODE: 0x00000eb8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 66085000
+# debugasm 00000ebc 0000xxxx        *
+# DECODE: 0x00000ebc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 66155000
+# debugasm 00000ec0 0000xxxx        *
+# DECODE: 0x00000ec0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 66225000
+# debugasm 00000ec4 0000xxxx        *
+# DECODE: 0x00000ec4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 66295000
+# debugasm 00000ec8 0000xxxx        *
+# DECODE: 0x00000ec8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 66365000
+# debugasm 00000ecc 0000xxxx        *
+# DECODE: 0x00000ecc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 66435000
+# debugasm 00000ed0 0000xxxx        *
+# DECODE: 0x00000ed0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 66505000
+# debugasm 00000ed4 0000xxxx        *
+# DECODE: 0x00000ed4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 66575000
+# debugasm 00000ed8 0000xxxx        *
+# DECODE: 0x00000ed8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 66645000
+# debugasm 00000edc 0000xxxx        *
+# DECODE: 0x00000edc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 66715000
+# debugasm 00000ee0 0000xxxx        *
+# DECODE: 0x00000ee0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 66785000
+# debugasm 00000ee4 0000xxxx        *
+# DECODE: 0x00000ee4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 66855000
+# debugasm 00000ee8 0000xxxx        *
+# DECODE: 0x00000ee8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 66925000
+# debugasm 00000eec 0000xxxx        *
+# DECODE: 0x00000eec     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 66995000
+# debugasm 00000ef0 0000xxxx        *
+# DECODE: 0x00000ef0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 67065000
+# debugasm 00000ef4 0000xxxx        *
+# DECODE: 0x00000ef4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 67135000
+# debugasm 00000ef8 0000xxxx        *
+# DECODE: 0x00000ef8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 67205000
+# debugasm 00000efc 0000xxxx        *
+# DECODE: 0x00000efc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 67275000
+# debugasm 00000f00 0000xxxx        *
+# DECODE: 0x00000f00     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 67345000
+# debugasm 00000f04 0000xxxx        *
+# DECODE: 0x00000f04     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 67415000
+# debugasm 00000f08 0000xxxx        *
+# DECODE: 0x00000f08     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 67485000
+# debugasm 00000f0c 0000xxxx        *
+# DECODE: 0x00000f0c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 67555000
+# debugasm 00000f10 0000xxxx        *
+# DECODE: 0x00000f10     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 67625000
+# debugasm 00000f14 0000xxxx        *
+# DECODE: 0x00000f14     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 67695000
+# debugasm 00000f18 0000xxxx        *
+# DECODE: 0x00000f18     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 67765000
+# debugasm 00000f1c 0000xxxx        *
+# DECODE: 0x00000f1c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 67835000
+# debugasm 00000f20 0000xxxx        *
+# DECODE: 0x00000f20     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 67905000
+# debugasm 00000f24 0000xxxx        *
+# DECODE: 0x00000f24     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 67975000
+# debugasm 00000f28 0000xxxx        *
+# DECODE: 0x00000f28     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 68045000
+# debugasm 00000f2c 0000xxxx        *
+# DECODE: 0x00000f2c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 68115000
+# debugasm 00000f30 0000xxxx        *
+# DECODE: 0x00000f30     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 68185000
+# debugasm 00000f34 0000xxxx        *
+# DECODE: 0x00000f34     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 68255000
+# debugasm 00000f38 0000xxxx        *
+# DECODE: 0x00000f38     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 68325000
+# debugasm 00000f3c 0000xxxx        *
+# DECODE: 0x00000f3c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 68395000
+# debugasm 00000f40 0000xxxx        *
+# DECODE: 0x00000f40     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 68465000
+# debugasm 00000f44 0000xxxx        *
+# DECODE: 0x00000f44     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 68535000
+# debugasm 00000f48 0000xxxx        *
+# DECODE: 0x00000f48     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 68605000
+# debugasm 00000f4c 0000xxxx        *
+# DECODE: 0x00000f4c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 68675000
+# debugasm 00000f50 0000xxxx        *
+# DECODE: 0x00000f50     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 68745000
+# debugasm 00000f54 0000xxxx        *
+# DECODE: 0x00000f54     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 68815000
+# debugasm 00000f58 0000xxxx        *
+# DECODE: 0x00000f58     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 68885000
+# debugasm 00000f5c 0000xxxx        *
+# DECODE: 0x00000f5c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 68955000
+# debugasm 00000f60 0000xxxx        *
+# DECODE: 0x00000f60     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 69025000
+# debugasm 00000f64 0000xxxx        *
+# DECODE: 0x00000f64     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 69095000
+# debugasm 00000f68 0000xxxx        *
+# DECODE: 0x00000f68     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 69165000
+# debugasm 00000f6c 0000xxxx        *
+# DECODE: 0x00000f6c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 69235000
+# debugasm 00000f70 0000xxxx        *
+# DECODE: 0x00000f70     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 69305000
+# debugasm 00000f74 0000xxxx        *
+# DECODE: 0x00000f74     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 69375000
+# debugasm 00000f78 0000xxxx        *
+# DECODE: 0x00000f78     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 69445000
+# debugasm 00000f7c 0000xxxx        *
+# DECODE: 0x00000f7c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 69515000
+# debugasm 00000f80 0000xxxx        *
+# DECODE: 0x00000f80     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 69585000
+# debugasm 00000f84 0000xxxx        *
+# DECODE: 0x00000f84     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 69655000
+# debugasm 00000f88 0000xxxx        *
+# DECODE: 0x00000f88     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 69725000
+# debugasm 00000f8c 0000xxxx        *
+# DECODE: 0x00000f8c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 69795000
+# debugasm 00000f90 0000xxxx        *
+# DECODE: 0x00000f90     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 69865000
+# debugasm 00000f94 0000xxxx        *
+# DECODE: 0x00000f94     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 69935000
+# debugasm 00000f98 0000xxxx        *
+# DECODE: 0x00000f98     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 70005000
+# debugasm 00000f9c 0000xxxx        *
+# DECODE: 0x00000f9c     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 70075000
+# debugasm 00000fa0 0000xxxx        *
+# DECODE: 0x00000fa0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 70145000
+# debugasm 00000fa4 0000xxxx        *
+# DECODE: 0x00000fa4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 70215000
+# debugasm 00000fa8 0000xxxx        *
+# DECODE: 0x00000fa8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 70285000
+# debugasm 00000fac 0000xxxx        *
+# DECODE: 0x00000fac     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 70355000
+# debugasm 00000fb0 0000xxxx        *
+# DECODE: 0x00000fb0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 70425000
+# debugasm 00000fb4 0000xxxx        *
+# DECODE: 0x00000fb4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 70495000
+# debugasm 00000fb8 0000xxxx        *
+# DECODE: 0x00000fb8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 70565000
+# debugasm 00000fbc 0000xxxx        *
+# DECODE: 0x00000fbc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 70635000
+# debugasm 00000fc0 0000xxxx        *
+# DECODE: 0x00000fc0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 70705000
+# debugasm 00000fc4 0000xxxx        *
+# DECODE: 0x00000fc4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 70775000
+# debugasm 00000fc8 0000xxxx        *
+# DECODE: 0x00000fc8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 70845000
+# debugasm 00000fcc 0000xxxx        *
+# DECODE: 0x00000fcc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 70915000
+# debugasm 00000fd0 0000xxxx        *
+# DECODE: 0x00000fd0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 70985000
+# debugasm 00000fd4 0000xxxx        *
+# DECODE: 0x00000fd4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 71055000
+# debugasm 00000fd8 0000xxxx        *
+# DECODE: 0x00000fd8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 71125000
+# debugasm 00000fdc 0000xxxx        *
+# DECODE: 0x00000fdc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 71195000
+# debugasm 00000fe0 0000xxxx        *
+# DECODE: 0x00000fe0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 71265000
+# debugasm 00000fe4 0000xxxx        *
+# DECODE: 0x00000fe4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 71335000
+# debugasm 00000fe8 0000xxxx        *
+# DECODE: 0x00000fe8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 71405000
+# debugasm 00000fec 0000xxxx        *
+# DECODE: 0x00000fec     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 71475000
+# debugasm 00000ff0 0000xxxx        *
+# DECODE: 0x00000ff0     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 71545000
+# debugasm 00000ff4 0000xxxx        *
+# DECODE: 0x00000ff4     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 71615000
+# debugasm 00000ff8 0000xxxx        *
+# DECODE: 0x00000ff8     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# -- 71685000
+# debugasm 00000ffc 0000xxxx        *
+# DECODE: 0x00000ffc     0xxxxx UNKNOWN
+# LD_RS1:  x 0xxxxxxxxx
+# LD_RS2:  x 0xxxxxxxxx
+# Break key hit 
+# Simulation stop requested.

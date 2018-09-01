@@ -45,7 +45,7 @@ module picosoc ();
 	initial begin
 		clk = 0;
         resetn = 0;
-		$readmemh("/home/zhangshuai/develop/soft_core/vivado_project/test_picorv32/new_asm_main.data",internal_sram.mem,0);
+		$readmemh("/home/ckj/ckj_test/picorv32/new_asm_main.data",internal_sram.mem,0);
 		
 		for(i=0;i<13;i=i+1)
 			$display("internal_sram.mem[%d] = %h",i,internal_sram.mem[i]);

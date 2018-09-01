@@ -56,7 +56,7 @@ module picorv32 #(
 	parameter [ 0:0] COMPRESSED_ISA = 0,
 	//不对齐内存访问
 	parameter [ 0:0] CATCH_MISALIGN = 1,
-	//非法指令
+	//捕获非法指令
 	parameter [ 0:0] CATCH_ILLINSN = 1,
 	//pcpi协处理接口
 	parameter [ 0:0] ENABLE_PCPI = 0,
@@ -77,7 +77,7 @@ module picorv32 #(
 	parameter [31:0] PROGADDR_RESET = 32'h 0000_0000,
 	//中断处理程序的开始地址
 	parameter [31:0] PROGADDR_IRQ = 32'h 0000_0010,
-	//x2堆栈指针的值
+	//x2堆栈指针的值,当该值不是ffffffff时,x2寄存器的值被设置为对应的值
 	parameter [31:0] STACKADDR = 32'h ffff_ffff	
 ) (
 	input clk, resetn,
@@ -153,6 +153,7 @@ module picorv32 #(
 		ENABLE_IRQ，ENABLE_IRQ_QREGS：使能中断寄存器 4个
 		最多16+16+4=36个寄存器
 	*/
+	//寄存器数量，其中ENABLE_IRQ_QREGS用来标记中断专用寄存器
 	localparam integer regfile_size = (ENABLE_REGS_16_31 ? 32 : 16) + 4*ENABLE_IRQ*ENABLE_IRQ_QREGS;
 	//寄存器索引位数，和前面的寄存器数量对应
 	localparam integer regindex_bits = (ENABLE_REGS_16_31 ? 5 : 4) + ENABLE_IRQ*ENABLE_IRQ_QREGS;
@@ -263,6 +264,7 @@ module picorv32 #(
 	reg        pcpi_int_wait;
 	reg        pcpi_int_ready;
 
+	//ENABLE_FAST_MUL和ENABLE_MUL均为0
 	generate if (ENABLE_FAST_MUL) begin
 		picorv32_pcpi_fast_mul pcpi_mul (
 			.clk       (clk            ),
@@ -296,6 +298,7 @@ module picorv32 #(
 		assign pcpi_mul_ready = 0;
 	end endgenerate
 
+	//ENABLE_DIV为0
 	generate if (ENABLE_DIV) begin
 		picorv32_pcpi_div pcpi_div (
 			.clk       (clk            ),
@@ -574,12 +577,14 @@ module picorv32 #(
 			end
 			case (mem_state)
 				0: begin
+					//处理与数据读和指令读相关的操作
 					if (mem_do_prefetch || mem_do_rinst || mem_do_rdata) begin
 						mem_valid <= !mem_la_use_prefetched_high_word;
 						mem_instr <= mem_do_prefetch || mem_do_rinst;
 						mem_wstrb <= 0;
 						mem_state <= 1;
 					end
+					//处理与数据写相关的操作
 					if (mem_do_wdata) begin
 						mem_valid <= 1;
 						mem_instr <= 0;
@@ -855,6 +860,7 @@ module picorv32 #(
 		is_lbu_lhu_lw <= |{instr_lbu, instr_lhu, instr_lw};
 		is_compare <= |{is_beq_bne_blt_bge_bltu_bgeu, instr_slti, instr_slt, instr_sltiu, instr_sltu};
 
+		//读指令操作完成
 		if (mem_do_rinst && mem_done) begin
 			instr_lui     <= mem_rdata_latched[6:0] == 7'b0110111;
 			instr_auipc   <= mem_rdata_latched[6:0] == 7'b0010111;
@@ -1184,6 +1190,7 @@ module picorv32 #(
 		if (cpu_state == cpu_state_ldmem)  dbg_ascii_state = "ldmem";
 	end
 
+	//以set开头，用做标志来标示访存操作类型
 	reg set_mem_do_rinst;
 	reg set_mem_do_rdata;
 	reg set_mem_do_wdata;
@@ -1215,6 +1222,7 @@ module picorv32 #(
 	reg [31:0] alu_shl, alu_shr;
 	reg alu_eq, alu_ltu, alu_lts;
 
+	//TWO_CYCLE_ALU为0
 	generate if (TWO_CYCLE_ALU) begin
 		always @(posedge clk) begin
 			alu_add_sub <= instr_sub ? reg_op1 - reg_op2 : reg_op1 + reg_op2;
@@ -1348,10 +1356,11 @@ module picorv32 #(
 			cpuregs_rs2 = cpuregs_rs1;
 		end
 	end
-`else
+`else	//从这里执行
 	wire[31:0] cpuregs_rdata1;
 	wire[31:0] cpuregs_rdata2;
 
+	//ENABLE_REGS_DUALPORT为1
 	wire [5:0] cpuregs_waddr = latched_rd;
 	wire [5:0] cpuregs_raddr1 = ENABLE_REGS_DUALPORT ? decoded_rs1 : decoded_rs;
 	wire [5:0] cpuregs_raddr2 = ENABLE_REGS_DUALPORT ? decoded_rs2 : 0;
@@ -1431,7 +1440,8 @@ module picorv32 #(
 		if (ENABLE_IRQ) begin
 			next_irq_pending = next_irq_pending | irq;
 		end
-
+		
+		//读指令操作完成后出发decoder
 		decoder_trigger <= mem_do_rinst && mem_done;
 		decoder_trigger_q <= decoder_trigger;
 		decoder_pseudo_trigger <= 0;
@@ -1448,6 +1458,7 @@ module picorv32 #(
 				reg_pc：PROGADDR_RESET
 				cpu_state：cpu_state_fetch
 		*/
+		//PROGADDR_RESET位程序起始地址
 		if (!resetn) begin
 			reg_pc <= PROGADDR_RESET;
 			reg_next_pc <= PROGADDR_RESET;
